@@ -2100,7 +2100,7 @@ ns1:worstRating a owl:DatatypeProperty ;
     ns1:actor :animación ;
     ns1:contentRating "Apta todo público" ;
     ns1:countryOfOrigin "EEUU" ;
-    ns1:description """Película animada sobre el dibujito Scooby-Doo que sigue a un perro Gran Danés y sus 4 amigos: Fred, Daphne, Vilma y Shaggy quienes juntos viajan por el mundo resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales.-\r
+    ns1:description """Película animada sobre el dibujito Scooby-Doo que sigue a un perro Gran Danés y sus 4 amigos: Fred, Daphne, Vilma y Shaggy quienes juntos viajan por el mundo resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales.-\r\r
 Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y cómo se unieron con los jóvenes detectives Fred, Velma y Daphne para formar Mystery Inc. Ahora, con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más desafiante de todos los tiempos: una trama para liberar Cerberus, el perro fantasma, sobre el mundo. Mientras compiten para detener este "perrocalipsis" global, la pandilla descubre que Scooby tiene un legado secreto y un gran y épico destino que nadie imaginaba.""" ;
     ns1:director "Tony Cervone" ;
     ns1:duration "94 minutos" ;
@@ -2473,7 +2473,7 @@ Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y
         :Pablo_Rago ;
     ns1:contentRating "Apta mayores de 16 años" ;
     ns1:countryOfOrigin "Argentina" ;
-    ns1:description """Es 24 de diciembre, víspera de Navidad. En una casa tranquila en San Isidro donde vive un matrimonio con su pequeña hija, un ladrón  espera su momento para entrar a robar. Para su sorpresa, se encontrará primero con el amante de la señora de la casa al cual obligará a participar en el robo.\r
+    ns1:description """Es 24 de diciembre, víspera de Navidad. En una casa tranquila en San Isidro donde vive un matrimonio con su pequeña hija, un ladrón  espera su momento para entrar a robar. Para su sorpresa, se encontrará primero con el amante de la señora de la casa al cual obligará a participar en el robo.\r\r
 Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá Noel y le pedirá cumplir su lista de deseos navideños""" ;
     ns1:director "Gastón Portal" ;
     ns1:duration "98 minutos" ;
@@ -2659,8 +2659,8 @@ Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá 
         <https://raw.githubusercontent.com/fdioguardi/movies_ontology/master/movie.ttl#https://www.imdb.com/company/co0038332/>,
         <https://raw.githubusercontent.com/fdioguardi/movies_ontology/master/movie.ttl#https://www.imdb.com/company/co0283444/>,
         <https://raw.githubusercontent.com/fdioguardi/movies_ontology/master/movie.ttl#https://www.imdb.com/company/co0728674/> ;
-    ns1:description """&#39;Wonder Woman 1984&#39; llegará a la pantalla grande el próximo 5 de junio de 2020, de nuevo con la actriz israelí Gal Gadot en el papel de la Mujer Maravilla y Patty Jenkins detrás de las cámaras. La secuela de &#39;Wonder Woman&#39; contará además con el regreso de Chris Pine (&#39;Star Trek. Más allá&#39;) como Steve Trevor. La película sigue a Diana en su vida durante los años 80 en Estados Unidos. En esta ocasión, Diana se enfrentará a nuevos enemigos. Su principal antagonista es la arqueóloga británica Barbara Minerva, que será interpretada por Kristen Wigg (&#39;Cazafantasmas&#39;). La científica tiene un alter ego, la villana Cheetah que tiene una fuerza y agilidad sobrehumanas. Otro enemigo a tener en cuenta será el empresario Maxwel Lord, interpretado por Pedro Pascal (&#39;The Mandalorian&#39;). Este personaje es un arrogante con la habilidad de manipular a otros a su antojo. En los cómics, Max Lord tiene poderes mentales. También aparecen en esta cinta las guerreras amazonas Antiope (Robin Wright) y la Reina Hippolyta (Connie Nielsen).\r
-\r
+    ns1:description """&#39;Wonder Woman 1984&#39; llegará a la pantalla grande el próximo 5 de junio de 2020, de nuevo con la actriz israelí Gal Gadot en el papel de la Mujer Maravilla y Patty Jenkins detrás de las cámaras. La secuela de &#39;Wonder Woman&#39; contará además con el regreso de Chris Pine (&#39;Star Trek. Más allá&#39;) como Steve Trevor. La película sigue a Diana en su vida durante los años 80 en Estados Unidos. En esta ocasión, Diana se enfrentará a nuevos enemigos. Su principal antagonista es la arqueóloga británica Barbara Minerva, que será interpretada por Kristen Wigg (&#39;Cazafantasmas&#39;). La científica tiene un alter ego, la villana Cheetah que tiene una fuerza y agilidad sobrehumanas. Otro enemigo a tener en cuenta será el empresario Maxwel Lord, interpretado por Pedro Pascal (&#39;The Mandalorian&#39;). Este personaje es un arrogante con la habilidad de manipular a otros a su antojo. En los cómics, Max Lord tiene poderes mentales. También aparecen en esta cinta las guerreras amazonas Antiope (Robin Wright) y la Reina Hippolyta (Connie Nielsen).\r\r
+\r\r
 La trama de esta película es una gran misterio. El guión está basado en una historia escrita por Patty Jenkins, Geoff Johns (&#39;The Flash&#39;, &#39;Aquaman&#39;) y Dave Callaham (&#39;Zombieland: Mata y remata&#39;). Se espera que tenga protagonismo la tecnología y la vigilancia, teniendo en cuenta el título que hace referencia a la distopía de &#39;1984&#39; de George Orwell.""",
         "Ambientada en los años 80s. El mayor deseo de Diana Prince parece ser tener devuelta a Steve Trevor. Esto inexplicablemente parece haberse convertido en realidad, pero la enfrentará a dos nuevos villanos: Max Lord y Cheetah",
         "En 1984, en plena Guerra Fría, Diana Prince, conocida como Wonder Woman, se enfrenta al empresario Maxwell Lord y a su antigua amiga Barbara Minerva / Cheetah, una villana que posee fuerza y agilidad sobrehumanas.",
@@ -2886,7 +2886,7 @@ ns1:MovieTheater a owl:Class .
         "P-13" ;
     ns1:countryOfOrigin "EEUU",
         "Estados Unidos" ;
-    ns1:description """Encerrados contra su voluntad en una institución secreta, 5 jóvenes mutantes descubren sus poderosas habilidades. Están bajo el estudio y análisis de la Doctora Cecilia Reyes quién tiene como objetivo curarlos.\r
+    ns1:description """Encerrados contra su voluntad en una institución secreta, 5 jóvenes mutantes descubren sus poderosas habilidades. Están bajo el estudio y análisis de la Doctora Cecilia Reyes quién tiene como objetivo curarlos.\r\r
 Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, poderes y peligros que los rodean para intentar escapar a su pasado y salvarse a si mismos.""",
         "La historia de los Nuevos Mutantes, un equipo de héroes mutantes formado por los primeros graduados de la escuela de Charles Xavier." ;
     ns1:director "Josh Boone" ;
@@ -2916,8 +2916,8 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
         "Apta todo público" ;
     ns1:countryOfOrigin "EEUU",
         "Estados Unidos" ;
-    ns1:description """Película del clásico dibujo animado de Tom y Jerry que mezcla live-action con animación. \r
-Jerry se muda al hotel más lujoso de Nueva York justo antes del "casamiento del siglo"; la coordinadora de la ceremonia, desesperada, no tiene más opción que contratar a Tom para eliminar a Jerry. Esto desata una batalla entre gato y ratón que amenaza con destruir la carrera de la coordinadora, la ceremonia e incluso quizás el hotel mismo.\r
+    ns1:description """Película del clásico dibujo animado de Tom y Jerry que mezcla live-action con animación. \r\r
+Jerry se muda al hotel más lujoso de Nueva York justo antes del "casamiento del siglo"; la coordinadora de la ceremonia, desesperada, no tiene más opción que contratar a Tom para eliminar a Jerry. Esto desata una batalla entre gato y ratón que amenaza con destruir la carrera de la coordinadora, la ceremonia e incluso quizás el hotel mismo.\r\r
 Pero pronto surge un problema más grave: un empleado ambicioso y diabólico que conspira contra los tres.""",
         "Tom el gato y Jerry el ratón son expulsados de su casa y se trasladan a un elegante hotel de Nueva York, donde una empleada descuidada llamada Kayla perderá su trabajo si no puede desalojar a Jerry antes de una boda de clase alta en el hotel. ¿Su solución? Contratar a Tom para deshacerse del molesto ratón." ;
     ns1:director "Tim Story" ;

@@ -1,6 +1,7 @@
 from rdflib import Graph, Literal, Namespace
 from rdflib.namespace import OWL
 from urllib.request import urlopen, Request
+from sys import argv, exit
 
 
 def get_link_to_data(resource):
@@ -12,14 +13,18 @@ def get_link_to_data(resource):
 
 
 def main():
+    if len(argv) != 3:
+        print("Argumentos invalidos. Ingrese nombre del dataset-original y del archivo links.ttl")
+        exit()
+
     dbo = Namespace("http://dbpedia.org/ontology/")
     prov = Namespace("http://www.w3.org/ns/prov#")
 
     links = Graph()
-    links.parse("links.ttl", format="turtle")
+    links.parse(argv[2], format="turtle")
 
     output = Graph()
-    output.parse("dataset-original.ttl", format="turtle")
+    output.parse(argv[1], format="turtle")
     output += links
 
     proprieties = [dbo.birthDate, dbo.occupation, prov.wasDerivedFrom]
@@ -37,7 +42,6 @@ def main():
     output.serialize(
         "dataset-enriquecido.ttl", format="turtle", encoding="utf-8"
     )
-
 
 if __name__ == "__main__":
     main()
