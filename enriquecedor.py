@@ -15,7 +15,7 @@ def get_link_to_data(resource):
 def main():
     if len(argv) != 3:
         print("Argumentos invalidos. Ingrese nombre del dataset-original y del archivo links.ttl")
-        exit()
+        exit(1)
 
     dbo = Namespace("http://dbpedia.org/ontology/")
     prov = Namespace("http://www.w3.org/ns/prov#")
