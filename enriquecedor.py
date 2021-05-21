@@ -1,4 +1,4 @@
-from rdflib import Graph, Literal
+from rdflib import Graph, Literal, Namespace
 from rdflib.namespace import OWL
 from urllib.request import urlopen, Request
 
@@ -7,24 +7,22 @@ def get_link_to_data(resource):
     "Returns 'https://dbpedia.org/data/...'"
 
     return urlopen(
-        Request(
-            resource,
-            headers={
-                "Accept": "application/rdf+xml",
-            },
-        )
+        Request(resource, headers={"Accept": "application/rdf+xml"})
     )
 
 
 def main():
+    dbo = Namespace("http://dbpedia.org/ontology/")
+    prov = Namespace("http://www.w3.org/ns/prov#")
+
     links = Graph()
     links.parse("links.ttl", format="turtle")
 
     output = Graph()
     output.parse("dataset-original.ttl", format="turtle")
-    output.parse("links.ttl", format="turtle")
+    output += links
 
-    proprieties = {}
+    proprieties = [dbo.birthDate, dbo.occupation, prov.wasDerivedFrom]
 
     for stmt in links:
         if stmt[1] != OWL["sameAs"]:
@@ -33,12 +31,11 @@ def main():
         actor = Graph()
         actor.parse(get_link_to_data(stmt[2].toPython()))
 
-        # output.add((individual, OWL.birthDate, actor[aca va el nombre de la propiedad]))
-        # output.add((individual, OWL.wasDerivedFrom, dbpedia[aca va el nombre de la propiedad]))
-        # output.add((individual, OWL.occupation, dbpedia[aca va el nombre de la propiedad]))
+        for property in proprieties:
+            output += actor.triples((None, property, None))
 
     output.serialize(
-    "dataset-enriquecido.rdf", encoding="utf-8"
+        "dataset-enriquecido.ttl", format="turtle", encoding="utf-8"
     )
 
 
