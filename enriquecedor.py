@@ -39,9 +39,7 @@ def main():
         for property in proprieties:
             output += actor.triples((None, property, None))
 
-    output.serialize(
-        "dataset-enriquecido.ttl", format="turtle", encoding="utf-8"
-    )
+    print(output.serialize().decode("utf-8"))
 
 if __name__ == "__main__":
     main()
