@@ -34,8 +34,8 @@ def main():
         actor.parse(get_link_to_data(stmt[2].toPython()))
 
         # output.add((individual, OWL.birthDate, actor[aca va el nombre de la propiedad]))
-        # output.add((individual, OWL.propiedad, dbpedia[aca va el nombre de la propiedad]))
-        # output.add((individual, OWL.propiedad, dbpedia[aca va el nombre de la propiedad]))
+        # output.add((individual, OWL.wasDerivedFrom, dbpedia[aca va el nombre de la propiedad]))
+        # output.add((individual, OWL.occupation, dbpedia[aca va el nombre de la propiedad]))
 
     output.serialize(
     "dataset-enriquecido.rdf", encoding="utf-8"
