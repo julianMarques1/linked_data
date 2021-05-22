@@ -18,7 +18,8 @@ def main():
         exit(1)
 
     dbo = Namespace("http://dbpedia.org/ontology/")
-    prov = Namespace("http://www.w3.org/ns/prov#")
+    dbp = Namespace("http://dbpedia.org/property/")
+    foaf = Namespace("http://xmlns.com/foaf/0.1/")
 
     links = Graph()
     links.parse(argv[2], format="turtle")
@@ -27,7 +28,7 @@ def main():
     output.parse(argv[1], format="turtle")
     output += links
 
-    proprieties = [dbo.birthDate, dbo.occupation, prov.wasDerivedFrom]
+    proprieties = [dbo.birthDate, dbp.occupation, foaf.isPrimaryTopicOf]
 
     for stmt in links:
         if stmt[1] != OWL["sameAs"]:
