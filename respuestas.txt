@@ -1,0 +1,19 @@
+¿Qué requisitos debe cumplir el archivo dataset-original.ttl para que su programa funcione adecuadamente?
+
+	No es necesario ningun requisito en especial salvo que este generado correctamente en el archivo dataset-original para que el programa funcione adecuadamente
+
+¿Cree que funcionará si le damos como entrada el archivo generado por alguno de sus compañeros?
+
+	Si, funcionaria perfectamente ya que lo unico que se hace es cargar el dataset original en un grafo, por lo que mientras el dataset-original se cargue correctamente funcionaria correctamente
+
+¿Cómo efectuó la búsqueda de correspondencias entre su dataset y dbpedia?
+
+	
+
+¿Se podría automatizar la búsqueda de correspondencias? ¿Cómo? ¿Con qué efectividad?
+
+
+
+Le pedimos que incluya la información obtenida de dbpedia en el archivo resultante. Desde el punto de vista de alguien que va a utilizar su dataset, ¿era necesario incluir esa información o alcanzaba con solo proveer los links sameAs?
+
+	

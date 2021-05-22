@@ -39,7 +39,7 @@ def main():
         for property in proprieties:
             output += actor.triples((None, property, None))
 
-    print(output.serialize().decode("utf-8"))
+    print(output.serialize(encoding="utf-8").decode("utf-8"))
 
 if __name__ == "__main__":
     main()
