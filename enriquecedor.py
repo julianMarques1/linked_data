@@ -38,9 +38,10 @@ def main():
         actor.parse(get_link_to_data(stmt[2].toPython()))
 
         for property in proprieties:
-            output += actor.triples((None, property, None))
+            for a, b, c in actor.triples((None, property, None)):
+                output.add((stmt[0], b, c))
 
-    print(output.serialize(encoding="utf-8").decode("utf-8"))
+    print(output.serialize(format="turtle",encoding="utf-8").decode("utf-8"))
 
 if __name__ == "__main__":
     main()
