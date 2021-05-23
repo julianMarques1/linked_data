@@ -2,7 +2,7 @@ from rdflib import Graph, Literal, Namespace
 from rdflib.namespace import OWL
 from urllib.request import urlopen, Request
 from sys import argv, exit
-
+from requests.utils import requote_uri
 
 def get_link_to_data(resource):
     "Returns 'https://dbpedia.org/data/...'"
@@ -10,7 +10,6 @@ def get_link_to_data(resource):
     return urlopen(
         Request(resource, headers={"Accept": "application/rdf+xml"})
     )
-
 
 def main():
     if len(argv) != 3:
