@@ -2,13 +2,12 @@ import requests
 from rdflib import Graph, Literal, Namespace
 from rdflib.namespace import OWL
 from sys import argv, exit
-
+from requests.utils import requote_uri
 
 def get_link_to_data(resource):
     "Returns 'https://dbpedia.org/data/...'"
 
     return requests.get(resource, headers={"Accept": "text/turtle"}).text
-
 
 def main():
     if len(argv) != 3:

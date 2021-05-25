@@ -1,19 +1,19 @@
 ¿Qué requisitos debe cumplir el archivo dataset-original.ttl para que su programa funcione adecuadamente?
 
-	No es necesario ningun requisito en especial salvo que este generado correctamente en el archivo dataset-original para que el programa funcione adecuadamente
+	Para que el porgrama funcione, no es necesario cumplir con ningun requisito especial en el archivo dataset-original.ttl
 
 ¿Cree que funcionará si le damos como entrada el archivo generado por alguno de sus compañeros?
 
-	Si, funcionaria perfectamente ya que lo unico que se hace es cargar el dataset original en un grafo, por lo que mientras el dataset-original se cargue correctamente funcionaria correctamente
+	Si, funcionaria perfectamente
 
 ¿Cómo efectuó la búsqueda de correspondencias entre su dataset y dbpedia?
 
-	
+	Lo buscamos en base al nombre del actor guardado en el dataset-original.ttl. Con eso era posible encontrar al actor en dbpedia
 
 ¿Se podría automatizar la búsqueda de correspondencias? ¿Cómo? ¿Con qué efectividad?
 
-
+	Si, para hacerlo es necesario ir generando links en base a alguna heuristica hasta encontrar el que pertenezca a una Person que sea aparentemente la que estamos buscando. En caso de que no se encuentre ese link, es decir retorne un 404, se genera otro link con otra heuristica y asi hasta encontrar a la persona que se busca
 
 Le pedimos que incluya la información obtenida de dbpedia en el archivo resultante. Desde el punto de vista de alguien que va a utilizar su dataset, ¿era necesario incluir esa información o alcanzaba con solo proveer los links sameAs?
 
-	
+	En si, no es necesario incluir esa informacion al dataset. Esto lo unico que facilita es el acceso a la informacion por parte de quien va a utilizar el dataset. Si se dejaran unicamente los links sameAs, se podria acceder a mas informacion yendola a buscar a la pagina de la forma en que nosotros lo hicimos para agregar  birthDate, wikipedia y occupation. esto permite tener acceso a la busqueda de mas informacion
