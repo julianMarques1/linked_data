@@ -42,7 +42,8 @@ def main():
 
         for property in proprieties:
             for a, b, c in actor.triples((None, property, None)):
-                output.add((stmt[0], b, c))
+                if c.toPython() != "":
+                    output.add((stmt[0], b, c))
 
     print(output.serialize(format="turtle").decode("utf-8"))
 
