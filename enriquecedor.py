@@ -1,20 +1,20 @@
+import requests
 from rdflib import Graph, Literal, Namespace
 from rdflib.namespace import OWL
-from urllib.request import urlopen, Request
 from sys import argv, exit
 
 
 def get_link_to_data(resource):
     "Returns 'https://dbpedia.org/data/...'"
 
-    return urlopen(
-        Request(resource, headers={"Accept": "application/rdf+xml"})
-    )
+    return requests.get(resource, headers={"Accept": "text/turtle"}).text
 
 
 def main():
     if len(argv) != 3:
-        print("Argumentos invalidos. Ingrese nombre del dataset-original y del archivo links.ttl")
+        print(
+            "Argumentos invalidos. Ingrese nombre del dataset-original y del archivo links.ttl"
+        )
         exit(1)
 
     dbo = Namespace("http://dbpedia.org/ontology/")
@@ -22,10 +22,10 @@ def main():
     foaf = Namespace("http://xmlns.com/foaf/0.1/")
 
     links = Graph()
-    links.parse(argv[2], format="turtle")
+    links.parse(argv[2], format="turtle", encoding="utf-8")
 
     output = Graph()
-    output.parse(argv[1], format="turtle")
+    output.parse(argv[1], format="turtle", encoding="utf-8")
     output += links
 
     proprieties = [dbo.birthDate, dbp.occupation, foaf.isPrimaryTopicOf]
@@ -35,13 +35,18 @@ def main():
             continue
 
         actor = Graph()
-        actor.parse(get_link_to_data(stmt[2].toPython()))
+        actor.parse(
+            data=get_link_to_data(stmt[2].toPython()),
+            format="turtle",
+            encoding="utf-8",
+        )
 
         for property in proprieties:
             for a, b, c in actor.triples((None, property, None)):
                 output.add((stmt[0], b, c))
 
-    print(output.serialize(format="turtle",encoding="utf-8").decode("utf-8"))
+    print(output.serialize(format="turtle").decode("utf-8"))
+
 
 if __name__ == "__main__":
     main()

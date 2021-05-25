@@ -1,8 +1,8 @@
 @prefix : <https://raw.githubusercontent.com/fdioguardi/movies_ontology/master/movie.ttl#> .
 @prefix ns1: <https://schema.org/> .
-@prefix ns2: <http://dbpedia.org/ontology/> .
-@prefix ns3: <http://dbpedia.org/property/> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://dbpedia.org/property/> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://dbpedia.org/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -473,17 +473,17 @@ ns1:workPresented a owl:ObjectProperty .
     :name "ABC Radio (Australia)" .
 
 :Aaron_Taylor-Johnson a ns1:Person ;
-    ns2:birthDate "1990-06-13"^^xsd:date ;
-    ns3:occupation ""@en,
+    ns4:birthDate "1990-06-13"^^xsd:date ;
+    ns2:occupation ""@en,
         "Actor"@en ;
     owl:sameAs "https://dbpedia.org/resource/Aaron_Taylor-Johnson" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Aaron_Taylor-Johnson> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Aaron_Taylor-Johnson> ;
     :name "Aaron Taylor-Johnson" .
 
 :Adam_Brody a ns1:Person ;
-    ns2:birthDate "1979-12-15"^^xsd:date ;
+    ns4:birthDate "1979-12-15"^^xsd:date ;
     owl:sameAs "https://dbpedia.org/resource/Adam_Brody" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Adam_Brody> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Adam_Brody> ;
     :name "Adam Brody" .
 
 :AggregateRating_0 a ns1:AggregateRating ;
@@ -549,10 +549,10 @@ ns1:workPresented a owl:ObjectProperty .
     :name "Anthony Ramos" .
 
 :Antonio_Banderas a ns1:Person ;
-    ns2:birthDate "1960-08-10"^^xsd:date ;
-    ns3:occupation "Actor, producer, director"@en ;
+    ns4:birthDate "1960-08-10"^^xsd:date ;
+    ns2:occupation "Actor, producer, director"@en ;
     owl:sameAs "https://dbpedia.org/resource/Antonio_Banderas" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Antonio_Banderas> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Antonio_Banderas> ;
     :name "Antonio Banderas" .
 
 :Anya_Taylor-Joy a ns1:Person ;
@@ -1092,12 +1092,12 @@ ns1:workPresented a owl:ObjectProperty .
     :name "Chloë Grace Moretz" .
 
 :Chris_Pine a ns1:Person ;
-    ns2:birthDate "1980-08-26"^^xsd:date ;
-    ns3:occupation "Actor"@en ;
+    ns4:birthDate "1980-08-26"^^xsd:date ;
+    ns2:occupation "Actor"@en ;
     rdfs:seeAlso <https://schema.org/https://www.imdb.com/name/nm1517976/>,
         <https://schema.org/https://www.metacritic.com/person/chris-pine> ;
     owl:sameAs "https://dbpedia.org/resource/Chris_Pine" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Chris_Pine> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Chris_Pine> ;
     :image "https://resizing.flixster.com/kXDRe1jUWEU8UFkdf8JhRPMUG8s=/660x990/v1.bjs3NTYxMDQ7ajsxODgxODsxMjAwOzY2MDs5OTA" ;
     :mainEntityOfPage "https://www.ecartelera.com/personas/chris-pine/" ;
     :name "Chris Pine" ;
@@ -1130,13 +1130,13 @@ ns1:workPresented a owl:ObjectProperty .
     :name "Concrete Playground" .
 
 :Connie_Britton a ns1:Person ;
-    ns2:birthDate "1967-03-06"^^xsd:date ;
-    ns3:occupation ""@en,
+    ns4:birthDate "1967-03-06"^^xsd:date ;
+    ns2:occupation ""@en,
         "Actress"@en,
         "producer"@en,
         "singer"@en ;
     owl:sameAs "https://dbpedia.org/resource/Connie_Britton" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Connie_Britton> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Connie_Britton> ;
     :name "Connie Britton" .
 
 :Connie_Nielsen a ns1:Person ;
@@ -1284,14 +1284,14 @@ ns1:workPresented a owl:ObjectProperty .
     :name "Gabriella Wilde" .
 
 :Gal_Gadot a ns1:Person ;
-    ns2:birthDate "1985-04-30"^^xsd:date ;
-    ns3:occupation ""@en,
+    ns4:birthDate "1985-04-30"^^xsd:date ;
+    ns2:occupation ""@en,
         "Actress"@en,
         "model"@en ;
     rdfs:seeAlso <https://schema.org/https://www.imdb.com/name/nm2933757/>,
         <https://schema.org/https://www.metacritic.com/person/gal-gadot> ;
     owl:sameAs "https://dbpedia.org/resource/Gal_Gadot" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Gal_Gadot> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Gal_Gadot> ;
     :image "https://resizing.flixster.com/dLV_qSUTi18Sb6W9904IUCOm8i8=/633x704/v1.cjs0Mjc1NjtwOzE4ODEwOzEyMDA7NjMzOzcwNA" ;
     :mainEntityOfPage "https://www.ecartelera.com/personas/gal-gadot/" ;
     :name "Gal Gadot" ;
@@ -1579,10 +1579,10 @@ ns1:workPresented a owl:ObjectProperty .
     :name "Max Greenfield" .
 
 :Mel_Blanc a ns1:Person ;
-    ns2:birthDate "1908-05-30"^^xsd:date ;
-    ns3:occupation "Voice actor, radio personality"@en ;
+    ns4:birthDate "1908-05-30"^^xsd:date ;
+    ns2:occupation "Voice actor, radio personality"@en ;
     owl:sameAs "https://dbpedia.org/resource/Mel_Blanc" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Mel_Blanc> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Mel_Blanc> ;
     :name "Mel Blanc" .
 
 :Mercedes_Burgos a ns1:Person ;
@@ -2340,14 +2340,14 @@ xsd:time a rdfs:Datatype .
         "22:50:00"^^xsd:time .
 
 :Benjamin_Biolay a ns1:Person ;
-    ns2:birthDate "1973-01-20"^^xsd:date ;
-    ns3:occupation ""@en,
+    ns4:birthDate "1973-01-20"^^xsd:date ;
+    ns2:occupation ""@en,
         "Singer"@en,
         "actor"@en,
         "record producer"@en,
         "songwriter"@en ;
     owl:sameAs "https://dbpedia.org/resource/Benjamin_Biolay" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Benjamin_Biolay> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Benjamin_Biolay> ;
     :name "Benjamin Biolay" .
 
 :CLASSIC_2D_ESPAÑOL_15:45 a ns1:ScreeningEvent ;
@@ -2426,7 +2426,7 @@ xsd:time a rdfs:Datatype .
 
 :Diego_Peretti a ns1:Person ;
     owl:sameAs "https://dbpedia.org/resource/Diego_Peretti" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Diego_Peretti> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Diego_Peretti> ;
     :name "Diego Peretti" .
 
 :EL_SECRETO_DEL_BOSQUE a ns1:Movie ;
@@ -2488,10 +2488,10 @@ Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá 
     :name "Movie Bitches" .
 
 :Natalia_Oreiro a ns1:Person ;
-    ns2:birthDate "1977-05-19"^^xsd:date ;
-    ns3:occupation "Singer, songwriter, actress, model"@en ;
+    ns4:birthDate "1977-05-19"^^xsd:date ;
+    ns2:occupation "Singer, songwriter, actress, model"@en ;
     owl:sameAs "https://dbpedia.org/resource/Natalia_Oreiro" ;
-    ns4:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Natalia_Oreiro> ;
+    ns3:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Natalia_Oreiro> ;
     :name "Natalia Oreiro" .
 
 :Pablo_Rago a ns1:Person ;

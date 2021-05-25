@@ -1,0 +1,2968 @@
+@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sch: <https://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl> .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl> rdf:type owl:Ontology ;
+                                                                                     owl:imports sch: .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.org/actor
+sch:actor rdf:type owl:ObjectProperty ;
+          owl:equivalentProperty sch:actors .
+
+
+###  https://schema.org/actors
+sch:actors rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/aggregateRating
+sch:aggregateRating rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/author
+sch:author rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/creator
+sch:creator rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/director
+sch:director rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/eligibleRegion
+sch:eligibleRegion rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/event
+sch:event rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/expectsAcceptanceOf
+sch:expectsAcceptanceOf rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/hasPart
+sch:hasPart rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/image
+sch:image rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/itemReviewed
+sch:itemReviewed rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/location
+sch:location rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/locationCreated
+sch:locationCreated rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/potentialAction
+sch:potentialAction rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/productionCompany
+sch:productionCompany rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/publisher
+sch:publisher rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/releasedEvent
+sch:releasedEvent rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/review
+sch:review rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/reviewRating
+sch:reviewRating rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/target
+sch:target rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/thumbnail
+sch:thumbnail rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/trailer
+sch:trailer rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/workPresented
+sch:workPresented rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#actionPlatform
+:actionPlatform rdf:type owl:DatatypeProperty ;
+                rdfs:domain sch:EntryPoint ;
+                rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#availabilityStarts
+:availabilityStarts rdf:type owl:DatatypeProperty ;
+                    rdfs:domain sch:Offer ;
+                    rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#bestRating
+:bestRating rdf:type owl:DatatypeProperty ;
+            rdfs:domain sch:Rating ;
+            rdfs:range xsd:float .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#category
+:category rdf:type owl:DatatypeProperty ;
+          rdfs:domain sch:Offer ;
+          rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#character
+:character rdf:type owl:DatatypeProperty ;
+           rdfs:domain sch:CreativeWork ;
+           rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#contentRating
+:contentRating rdf:type owl:DatatypeProperty ;
+               rdfs:domain sch:CreativeWork ;
+               rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#contentUrl
+:contentUrl rdf:type owl:DatatypeProperty ;
+            rdfs:domain sch:MediaObject ;
+            rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#countryOfOrigin
+:countryOfOrigin rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sch:Movie ;
+                 rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#dateCreated
+:dateCreated rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:CreativeWork ;
+             rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#dateModified
+:dateModified rdf:type owl:DatatypeProperty ;
+              rdfs:domain sch:CreativeWork ;
+              rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#datePublished
+:datePublished rdf:type owl:DatatypeProperty ;
+               rdfs:domain sch:CreativeWork ;
+               rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:Thing ;
+             rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( sch:Event
+                                      sch:MediaObject
+                                      sch:Movie
+                                      sch:Schedule
+                                    )
+                      ] ;
+          rdfs:range xsd:integer .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#embedUrl
+:embedUrl rdf:type owl:DatatypeProperty ;
+          rdfs:domain sch:MediaObject ;
+          rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#genre
+:genre rdf:type owl:DatatypeProperty ;
+       rdfs:domain sch:CreativeWork ;
+       rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#image
+:image rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#inLanguage
+:inLanguage rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#keywords
+:keywords rdf:type owl:DatatypeProperty ;
+          rdfs:domain sch:CreativeWork ;
+          rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#mainEntityOfPage
+:mainEntityOfPage rdf:type owl:DatatypeProperty ;
+                  rdfs:domain sch:Thing ;
+                  rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain sch:Thing ;
+      rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ratingCount
+:ratingCount rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:AggregateRating ;
+             rdfs:range xsd:integer .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ratingValue
+:ratingValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:Rating ;
+             rdfs:range xsd:float .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#reviewBody
+:reviewBody rdf:type owl:DatatypeProperty ;
+            rdfs:domain sch:Review ;
+            rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#reviewCount
+:reviewCount rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:AggregateRating ;
+             rdfs:range xsd:int .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#sameAs
+:sameAs rdf:type owl:DatatypeProperty ;
+        rdfs:domain sch:Thing ;
+        rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( sch:Event
+                                       sch:Schedule
+                                     )
+                       ] ;
+           rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( sch:Schedule
+                                       sch:ScreeningEvent
+                                     )
+                       ] ;
+           rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#thumbnailUrl
+:thumbnailUrl rdf:type owl:DatatypeProperty ;
+              rdfs:domain sch:CreativeWork ;
+              rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#timeRequired
+:timeRequired rdf:type owl:DatatypeProperty ;
+              rdfs:domain sch:CreativeWork ;
+              rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#uploadDate
+:uploadDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain sch:MediaObject ;
+            rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain sch:Thing ;
+     rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#urlTemplate
+:urlTemplate rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:EntryPoint ;
+             rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#videoFormat
+:videoFormat rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:ScreeningEvent ;
+             rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#worstRating
+:worstRating rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:Rating ;
+             rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://schema.org/AggregateRating
+sch:AggregateRating rdf:type owl:Class .
+
+
+###  https://schema.org/CreativeWork
+sch:CreativeWork rdf:type owl:Class .
+
+
+###  https://schema.org/EntryPoint
+sch:EntryPoint rdf:type owl:Class .
+
+
+###  https://schema.org/Event
+sch:Event rdf:type owl:Class .
+
+
+###  https://schema.org/MediaObject
+sch:MediaObject rdf:type owl:Class .
+
+
+###  https://schema.org/Movie
+sch:Movie rdf:type owl:Class .
+
+
+###  https://schema.org/Offer
+sch:Offer rdf:type owl:Class .
+
+
+###  https://schema.org/Rating
+sch:Rating rdf:type owl:Class .
+
+
+###  https://schema.org/Review
+sch:Review rdf:type owl:Class .
+
+
+###  https://schema.org/Schedule
+sch:Schedule rdf:type owl:Class .
+
+
+###  https://schema.org/ScreeningEvent
+sch:ScreeningEvent rdf:type owl:Class .
+
+
+###  https://schema.org/Thing
+sch:Thing rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Movie_Wonder_Woman_1984 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :character "Antiope"^^xsd:string,
+        "Barbara Minerva / Cheetah"^^xsd:string,
+        "Diana Prince / Wonder Woman"^^xsd:string,
+        "Hippolyta"^^xsd:string,
+        "None"^^xsd:string,
+        "Steve Trevor"^^xsd:string ;
+    :contentRating "PG-13"^^xsd:string ;
+    :countryOfOrigin "EE.UU."^^xsd:string ;
+    :dateCreated "2017-09-13T08:24:15-07:00"^^xsd:dateTime ;
+    :dateModified "2021-05-22T21:02:13-07:00"^^xsd:dateTime ;
+    :datePublished "2020-12-16"^^xsd:string,
+        "December 25, 2020"^^xsd:string ;
+    :description "&#39;Wonder Woman 1984&#39; llegará a la pantalla grande el próximo 5 de junio de 2020, de nuevo con la actriz israelí Gal Gadot en el papel de la Mujer Maravilla y Patty Jenkins detrás de las cámaras. La secuela de &#39;Wonder Woman&#39; contará además con el regreso de Chris Pine (&#39;Star Trek. Más allá&#39;) como Steve Trevor. La película sigue a Diana en su vida durante los años 80 en Estados Unidos. En esta ocasión, Diana se enfrentará a nuevos enemigos. Su principal antagonista es la arqueóloga británica Barbara Minerva, que será interpretada por Kristen Wigg (&#39;Cazafantasmas&#39;). La científica tiene un alter ego, la villana Cheetah que tiene una fuerza y agilidad sobrehumanas. Otro enemigo a tener en cuenta será el empresario Maxwel Lord, interpretado por Pedro Pascal (&#39;The Mandalorian&#39;). Este personaje es un arrogante con la habilidad de manipular a otros a su antojo. En los cómics, Max Lord tiene poderes mentales. También aparecen en esta cinta las guerreras amazonas Antiope (Robin Wright) y la Reina Hippolyta (Connie Nielsen).La trama de esta película es una gran misterio. El guión está basado en una historia escrita por Patty Jenkins, Geoff Johns (&#39;The Flash&#39;, &#39;Aquaman&#39;) y Dave Callaham (&#39;Zombieland: Mata y remata&#39;). Se espera que tenga protagonismo la tecnología y la vigilancia, teniendo en cuenta el título que hace referencia a la distopía de &#39;1984&#39; de George Orwell."^^xsd:string,
+        "Fast forward to the 1980s as Wonder Woman’s next big screen adventure finds her facing two all-new foes: Max Lord and The Cheetah."^^xsd:string,
+        "Wonder Woman 1984 is a movie starring Gal Gadot, Chris Pine, and Kristen Wiig. Diana must contend with a work colleague and businessman, whose desire for extreme wealth sends the world down a path of destruction, after an ancient..."^^xsd:string ;
+    :duration 151 ;
+    :genre "Acción"^^xsd:string,
+        "Action"^^xsd:string,
+        "Action & Adventure"^^xsd:string,
+        "Adventure"^^xsd:string,
+        "Aventura"^^xsd:string,
+        "Fantasy"^^xsd:string,
+        "Fantasía"^^xsd:string,
+        "Science Fiction & Fantasy"^^xsd:string ;
+    :image "https://m.media-amazon.com/images/M/MV5BYTlhNzJjYzYtNGU3My00ZDI5LTgzZDUtYzllYjU1ZmU0YTgwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg"^^xsd:anyURL,
+        "https://resizing.flixster.com/m8G6eIbecl1KNYf1yd2lt2F5yX8=/740x380/v1.bjsyNTUxODM4O2o7MTg4Mzk7MTIwMDs0MTIyOzIzMTI"^^xsd:anyURL,
+        "https://static.metacritic.com/images/products/movies/4/9d1a4650bb42f43a0a781bfa70a7772d.jpg"^^xsd:anyURL ;
+    :keywords "sequel,superhero,dc extended universe,princess,dc comics"^^xsd:string ;
+    :mainEntityOfPage "https://www.ecartelera.com/peliculas/wonder-woman-1984/"^^xsd:anyURL ;
+    :name "Wonder Woman 1984"^^xsd:string ;
+    :url "/title/tt7126948/"^^xsd:anyURL,
+        "https://www.metacritic.com/movie/wonder-woman-1984"^^xsd:anyURL,
+        "https://www.rottentomatoes.com/m/wonder_woman_1984"^^xsd:anyURL ;
+    sch:actor :Person_Alex_Delescu,
+        :Person_Amr_Waked,
+        :Person_Amreen_N._Yaqoob,
+        :Person_Bern_Collaco,
+        :Person_Brittney_Aleah,
+        :Person_Chris_Pine,
+        :Person_Chris_Silcox,
+        :Person_Connie_Nielsen,
+        :Person_Ella_Walker,
+        :Person_Gabriella_Wilde,
+        :Person_Gal_Gadot,
+        :Person_Jamaal_Burcher,
+        :Person_Jamal_Alkhaldi,
+        :Person_Jeff_Moore,
+        :Person_Joel_Morris,
+        :Person_John_Gettier,
+        :Person_Jonathan_Ajayi,
+        :Person_Julian_Ferro,
+        :Person_Justin_Sisk,
+        :Person_Kaila_Ingram,
+        :Person_Kristen_Wiig,
+        :Person_Kristoffer_Polaha,
+        :Person_Lilly_Aspell,
+        :Person_Lolita_Marie,
+        :Person_Lynda_Carter,
+        :Person_Lyon_Beckwith,
+        :Person_Manoj_Anand,
+        :Person_Marisol_Correa,
+        :Person_Marla_Aaron_Wapner,
+        :Person_Monica_Haynes,
+        :Person_Natasha_Rothwell,
+        :Person_Oakley_Bull,
+        :Person_Paul_Ron_Cruz,
+        :Person_Pedro_Pascal,
+        :Person_Penelope_Kapudija,
+        :Person_Ravi_Patel,
+        :Person_Rick_Kelvin_Branch,
+        :Person_Robin_Wright,
+        :Person_Sia_Alipour,
+        :Person_Sonia_Goswami,
+        :Person_Spencer_Trinwith,
+        :Person_Tessa_Bonham_Jones,
+        :Person_Thomas_Clay_Strickland ;
+    sch:actors :Person_Chris_Pine,
+        :Person_Connie_Nielsen,
+        :Person_Gal_Gadot,
+        :Person_Kristen_Wiig,
+        :Person_Pedro_Pascal,
+        :Person_Robin_Wright ;
+    sch:aggregateRating :Wonder_Woman_1984_AggregateRating_ecartelera,
+        :Wonder_Woman_1984_AggregateRating_imdb,
+        :Wonder_Woman_1984_AggregateRating_metacritic,
+        :Wonder_Woman_1984_AggregateRating_rottentomatoes ;
+    sch:author :Person_Patty_Jenkins ;
+    sch:creator :Person_Dave_Callaham,
+        :Person_Geoff_Johns,
+        :Person_Patty_Jenkins,
+        :Person_William_Moulton_Marston,
+        :Wonder_Woman_1984_Organization_0,
+        :Wonder_Woman_1984_Organization_1,
+        :Wonder_Woman_1984_Organization_2,
+        :Wonder_Woman_1984_Organization_3,
+        :Wonder_Woman_1984_Organization_4 ;
+    sch:director :Person_Patty_Jenkins ;
+    sch:hasPart :Wonder_Woman_1984_Clip_0 ;
+    sch:image :Wonder_Woman_1984_ImageObject_1 ;
+    sch:productionCompany :Organization_Warner_Bros._Pictures ;
+    sch:publisher :Organization_Warner_Bros._Pictures ;
+    sch:releasedEvent :Wonder_Woman_1984_PublicationEvent_0 ;
+    sch:review :Wonder_Woman_1984_Review_Amy_Nicholson,
+        :Wonder_Woman_1984_Review_Andrew_Galdi,
+        :Wonder_Woman_1984_Review_Avaryl_Halley,
+        :Wonder_Woman_1984_Review_Brian_Gill,
+        :Wonder_Woman_1984_Review_Dan_Tabor,
+        :Wonder_Woman_1984_Review_David_Bax,
+        :Wonder_Woman_1984_Review_David_Sims,
+        :Wonder_Woman_1984_Review_Eddie_Harrison,
+        :Wonder_Woman_1984_Review_Eric_Marchen,
+        :Wonder_Woman_1984_Review_Ian_Simmons,
+        :Wonder_Woman_1984_Review_Jake_Wilson,
+        :Wonder_Woman_1984_Review_Jennifer_Ouellette,
+        :Wonder_Woman_1984_Review_John_McDonald,
+        :Wonder_Woman_1984_Review_Kevin_Carr,
+        :Wonder_Woman_1984_Review_Mark_Jackson,
+        :Wonder_Woman_1984_Review_Mark_Meszoros,
+        :Wonder_Woman_1984_Review_Matt_Neal,
+        :Wonder_Woman_1984_Review_Nina_Garin,
+        :Wonder_Woman_1984_Review_Rafer_Guzman,
+        :Wonder_Woman_1984_Review_Sarah_Ward,
+        :Wonder_Woman_1984_Review_Sheri_Flanders,
+        :Wonder_Woman_1984_Review_Stephen_Romei,
+        :Wonder_Woman_1984_Review_Tony_Medley,
+        :Wonder_Woman_1984_Review_Valerie_Kalfrin,
+        :Wonder_Woman_1984_Review_jayg_58 ;
+    sch:trailer :Wonder_Woman_1984_VideoObject_Stream_on_HBO_Max_for_a_Limited_Time,
+        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Wonder_Woman_1984_VideoObject_Wonder_Woman_1984_(Trailer_2)> .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_ABC_Radio_(Australia)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "ABC Radio (Australia)"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-2397"^^xsd:anyURL .
+
+:Organization_Ars_Technica a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Ars Technica"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-2985"^^xsd:anyURL .
+
+:Organization_Australian_Financial_Review a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Australian Financial Review"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3199"^^xsd:anyURL .
+
+:Organization_Battleship_Pretension a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Battleship Pretension"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3090"^^xsd:anyURL .
+
+:Organization_Chicago_Reader a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Chicago Reader"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-66"^^xsd:anyURL .
+
+:Organization_Concrete_Playground a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Concrete Playground"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-2298"^^xsd:anyURL .
+
+:Organization_Epoch_Times a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Epoch Times"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-2771"^^xsd:anyURL .
+
+:Organization_Fat_Guys_at_the_Movies a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Fat Guys at the Movies"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-2722"^^xsd:anyURL .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_FilmWeek_(KPCC_-_NPR_Los_Angeles)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "FilmWeek (KPCC - NPR Los Angeles)"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3509"^^xsd:anyURL .
+
+:Organization_Kicking_the_Seat a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Kicking the Seat"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3892"^^xsd:anyURL .
+
+:Organization_Mad_About_Movies_Podcast a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Mad About Movies Podcast"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3256"^^xsd:anyURL .
+
+:Organization_Newsday a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Newsday"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-338"^^xsd:anyURL .
+
+:Organization_Phawker a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Phawker"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3631"^^xsd:anyURL .
+
+:Organization_San_Diego_Union-Tribune a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "San Diego Union-Tribune"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-503"^^xsd:anyURL .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_The_Age_(Australia)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "The Age (Australia)"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-2041"^^xsd:anyURL .
+
+:Organization_The_Atlantic a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "The Atlantic"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-24"^^xsd:anyURL .
+
+:Organization_The_Australian a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "The Australian"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-1964"^^xsd:anyURL .
+
+:Organization_The_Larchmont_Chronicle a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "The Larchmont Chronicle"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-2992"^^xsd:anyURL .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_The_News-Herald_(Willoughby,_OH)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "The News-Herald (Willoughby, OH)"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3916"^^xsd:anyURL .
+
+:Organization_Their_Own_League a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Their Own League"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3607"^^xsd:anyURL .
+
+:Organization_Untitled_Movie_Podcast a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Untitled Movie Podcast"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3831"^^xsd:anyURL .
+
+:Organization_film-authority.com a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "film-authority.com"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3904"^^xsd:anyURL .
+
+:Person_Alex_Delescu a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Alex Delescu"^^xsd:string ;
+    :url "https://www.metacritic.com/person/alex-delescu"^^xsd:anyURL .
+
+:Person_Amr_Waked a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Amr Waked"^^xsd:string ;
+    :url "https://www.metacritic.com/person/amr-waked"^^xsd:anyURL .
+
+:Person_Amreen_N._Yaqoob a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Amreen N. Yaqoob"^^xsd:string ;
+    :url "https://www.metacritic.com/person/amreen-n-yaqoob"^^xsd:anyURL .
+
+:Person_Amy_Nicholson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Amy Nicholson"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/amy-nicholson"^^xsd:anyURL .
+
+:Person_Andrew_Galdi a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Andrew Galdi"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/andrew-galdi"^^xsd:anyURL .
+
+:Person_Avaryl_Halley a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Avaryl Halley"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/avaryl-halley"^^xsd:anyURL .
+
+:Person_Bern_Collaco a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Bern Collaco"^^xsd:string ;
+    :url "https://www.metacritic.com/person/bern-collaco"^^xsd:anyURL .
+
+:Person_Brian_Gill a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Brian Gill"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/brian-gill"^^xsd:anyURL .
+
+:Person_Brittney_Aleah a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Brittney Aleah"^^xsd:string ;
+    :url "https://www.metacritic.com/person/brittney-aleah"^^xsd:anyURL .
+
+:Person_Chris_Silcox a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Chris Silcox"^^xsd:string ;
+    :url "https://www.metacritic.com/person/chris-silcox"^^xsd:anyURL .
+
+:Person_Dan_Tabor a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Dan Tabor"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/dan-tabor"^^xsd:anyURL .
+
+:Person_Dave_Callaham a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Dave Callaham"^^xsd:string ;
+    :url "/name/nm1709264/"^^xsd:anyURL .
+
+:Person_David_Bax a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "David Bax"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/david-bax"^^xsd:anyURL .
+
+:Person_David_Sims a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "David Sims"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/david-sims"^^xsd:anyURL .
+
+:Person_Eddie_Harrison a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Eddie Harrison"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/eddie-harrison"^^xsd:anyURL .
+
+:Person_Ella_Walker a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ella Walker"^^xsd:string ;
+    :url "https://www.metacritic.com/person/ella-walker"^^xsd:anyURL .
+
+:Person_Eric_Marchen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Eric Marchen"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/eric-marchen"^^xsd:anyURL .
+
+:Person_Gabriella_Wilde a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Gabriella Wilde"^^xsd:string ;
+    :url "https://www.metacritic.com/person/gabriella-wilde"^^xsd:anyURL .
+
+:Person_Geoff_Johns a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Geoff Johns"^^xsd:string ;
+    :url "/name/nm0424315/"^^xsd:anyURL .
+
+:Person_Ian_Simmons a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ian Simmons"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/ian-simmons"^^xsd:anyURL .
+
+:Person_Jake_Wilson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jake Wilson"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/jake-wilson"^^xsd:anyURL .
+
+:Person_Jamaal_Burcher a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jamaal Burcher"^^xsd:string ;
+    :url "https://www.metacritic.com/person/jamaal-burcher"^^xsd:anyURL .
+
+:Person_Jamal_Alkhaldi a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jamal Alkhaldi"^^xsd:string ;
+    :url "https://www.metacritic.com/person/jamal-alkhaldi"^^xsd:anyURL .
+
+:Person_Jeff_Moore a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jeff Moore"^^xsd:string ;
+    :url "https://www.metacritic.com/person/jeff-moore"^^xsd:anyURL .
+
+:Person_Jennifer_Ouellette a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jennifer Ouellette"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/jennifer-ouellette"^^xsd:anyURL .
+
+:Person_Joel_Morris a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Joel Morris"^^xsd:string ;
+    :url "https://www.metacritic.com/person/joel-morris"^^xsd:anyURL .
+
+:Person_John_Gettier a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "John Gettier"^^xsd:string ;
+    :url "https://www.metacritic.com/person/john-gettier"^^xsd:anyURL .
+
+:Person_John_McDonald a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "John McDonald"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/john-mcdonald"^^xsd:anyURL .
+
+:Person_Jonathan_Ajayi a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jonathan Ajayi"^^xsd:string ;
+    :url "https://www.metacritic.com/person/jonathan-ajayi"^^xsd:anyURL .
+
+:Person_Julian_Ferro a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Julian Ferro"^^xsd:string ;
+    :url "https://www.metacritic.com/person/julian-ferro"^^xsd:anyURL .
+
+:Person_Justin_Sisk a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Justin Sisk"^^xsd:string ;
+    :url "https://www.metacritic.com/person/justin-sisk"^^xsd:anyURL .
+
+:Person_Kaila_Ingram a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kaila Ingram"^^xsd:string ;
+    :url "https://www.metacritic.com/person/kaila-ingram"^^xsd:anyURL .
+
+:Person_Kevin_Carr a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kevin Carr"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/kevin-carr"^^xsd:anyURL .
+
+:Person_Kristoffer_Polaha a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kristoffer Polaha"^^xsd:string ;
+    :url "https://www.metacritic.com/person/kristoffer-polaha"^^xsd:anyURL .
+
+:Person_Lilly_Aspell a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Lilly Aspell"^^xsd:string ;
+    :url "https://www.metacritic.com/person/lilly-aspell"^^xsd:anyURL .
+
+:Person_Lolita_Marie a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Lolita Marie"^^xsd:string ;
+    :url "https://www.metacritic.com/person/lolita-marie"^^xsd:anyURL .
+
+:Person_Lynda_Carter a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Lynda Carter"^^xsd:string ;
+    :url "https://www.metacritic.com/person/lynda-carter"^^xsd:anyURL .
+
+:Person_Lyon_Beckwith a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Lyon Beckwith"^^xsd:string ;
+    :url "https://www.metacritic.com/person/lyon-beckwith"^^xsd:anyURL .
+
+:Person_Manoj_Anand a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Manoj Anand"^^xsd:string ;
+    :url "https://www.metacritic.com/person/manoj-anand"^^xsd:anyURL .
+
+:Person_Marisol_Correa a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Marisol Correa"^^xsd:string ;
+    :url "https://www.metacritic.com/person/marisol-correa"^^xsd:anyURL .
+
+:Person_Mark_Jackson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Mark Jackson"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/mark-jackson"^^xsd:anyURL .
+
+:Person_Mark_Meszoros a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Mark Meszoros"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/mark-meszoros"^^xsd:anyURL .
+
+:Person_Marla_Aaron_Wapner a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Marla Aaron Wapner"^^xsd:string ;
+    :url "https://www.metacritic.com/person/marla-aaron-wapner"^^xsd:anyURL .
+
+:Person_Matt_Neal a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Matt Neal"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/matt-neal"^^xsd:anyURL .
+
+:Person_Monica_Haynes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Monica Haynes"^^xsd:string ;
+    :url "https://www.metacritic.com/person/monica-haynes"^^xsd:anyURL .
+
+:Person_Natasha_Rothwell a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Natasha Rothwell"^^xsd:string ;
+    :url "https://www.metacritic.com/person/natasha-rothwell"^^xsd:anyURL .
+
+:Person_Nina_Garin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Nina Garin"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/nina-garin"^^xsd:anyURL .
+
+:Person_Oakley_Bull a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Oakley Bull"^^xsd:string ;
+    :url "https://www.metacritic.com/person/oakley-bull"^^xsd:anyURL .
+
+:Person_Paul_Ron_Cruz a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Paul Ron Cruz"^^xsd:string ;
+    :url "https://www.metacritic.com/person/paul-ron-cruz"^^xsd:anyURL .
+
+:Person_Penelope_Kapudija a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Penelope Kapudija"^^xsd:string ;
+    :url "https://www.metacritic.com/person/penelope-kapudija"^^xsd:anyURL .
+
+:Person_Rafer_Guzman a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Rafer Guzman"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/rafer-guzman"^^xsd:anyURL .
+
+:Person_Ravi_Patel a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ravi Patel"^^xsd:string ;
+    :url "https://www.metacritic.com/person/ravi-patel"^^xsd:anyURL .
+
+:Person_Rick_Kelvin_Branch a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Rick Kelvin Branch"^^xsd:string ;
+    :url "https://www.metacritic.com/person/rick-kelvin-branch"^^xsd:anyURL .
+
+:Person_Sarah_Ward a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Sarah Ward"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/sarah-ward"^^xsd:anyURL .
+
+:Person_Sheri_Flanders a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Sheri Flanders"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/sheri-flanders"^^xsd:anyURL .
+
+:Person_Sia_Alipour a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Sia Alipour"^^xsd:string ;
+    :url "https://www.metacritic.com/person/sia-alipour"^^xsd:anyURL .
+
+:Person_Sonia_Goswami a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Sonia Goswami"^^xsd:string ;
+    :url "https://www.metacritic.com/person/sonia-goswami"^^xsd:anyURL .
+
+:Person_Spencer_Trinwith a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Spencer Trinwith"^^xsd:string ;
+    :url "https://www.metacritic.com/person/spencer-trinwith"^^xsd:anyURL .
+
+:Person_Stephen_Romei a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Stephen Romei"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/stephen-romei"^^xsd:anyURL .
+
+:Person_Tessa_Bonham_Jones a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Tessa Bonham Jones"^^xsd:string ;
+    :url "https://www.metacritic.com/person/tessa-bonham-jones"^^xsd:anyURL .
+
+:Person_Thomas_Clay_Strickland a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Thomas Clay Strickland"^^xsd:string ;
+    :url "https://www.metacritic.com/person/thomas-clay-strickland"^^xsd:anyURL .
+
+:Person_Tony_Medley a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Tony Medley"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/tony-medley"^^xsd:anyURL .
+
+:Person_Valerie_Kalfrin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Valerie Kalfrin"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/critic/valerie-kalfrin"^^xsd:anyURL .
+
+:Person_William_Moulton_Marston a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "William Moulton Marston"^^xsd:string ;
+    :url "/name/nm0551376/"^^xsd:anyURL .
+
+:Person_jayg_58 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "jayg_58"^^xsd:string .
+
+:Wonder_Woman_1984_AggregateRating_ecartelera a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:AggregateRating ;
+    :bestRating "10.0"^^xsd:float ;
+    :ratingCount 20 ;
+    :ratingValue "7.6"^^xsd:float ;
+    :worstRating "0.0"^^xsd:float .
+
+:Wonder_Woman_1984_AggregateRating_imdb a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:AggregateRating ;
+    :bestRating "10.0"^^xsd:float ;
+    :ratingCount 203495 ;
+    :ratingValue "5.4"^^xsd:float ;
+    :worstRating "1.0"^^xsd:float .
+
+:Wonder_Woman_1984_AggregateRating_metacritic a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:AggregateRating ;
+    :bestRating "100.0"^^xsd:float ;
+    :ratingCount 57 ;
+    :ratingValue "60.0"^^xsd:float ;
+    :worstRating "0.0"^^xsd:float .
+
+:Wonder_Woman_1984_AggregateRating_rottentomatoes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:AggregateRating ;
+    :bestRating "100.0"^^xsd:float ;
+    :description "The Tomatometer rating – based on the published opinions of hundreds of film and television critics – is a trusted measurement of movie and TV programming quality for millions of moviegoers. It represents the percentage of professional critic reviews that are positive for a given film or television show."^^xsd:string ;
+    :name "Tomatometer"^^xsd:string ;
+    :ratingCount 426 ;
+    :ratingValue "59.0"^^xsd:float ;
+    :reviewCount 426 ;
+    :worstRating "0.0"^^xsd:float .
+
+:Wonder_Woman_1984_Clip_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Clip ;
+    :description "trailer"^^xsd:string ;
+    :timeRequired "PT2M24S"^^xsd:string ;
+    sch:potentialAction :Wonder_Woman_1984_WatchAction_0 .
+
+:Wonder_Woman_1984_CreativeWork_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:CreativeWork ;
+    :url "/title/tt7126948/"^^xsd:anyURL .
+
+:Wonder_Woman_1984_EntryPoint_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:EntryPoint ;
+    :actionPlatform "http://schema.googleapis.com/GoogleVideoCast"^^xsd:anyURL,
+        "http://schema.org/DesktopWebPlatform"^^xsd:anyURL,
+        "http://schema.org/IOSPlatform"^^xsd:anyURL,
+        "http://schema.org/MobileWebPlatform"^^xsd:anyURL ;
+    :inLanguage "es"^^xsd:string ;
+    :urlTemplate "https://www.ecartelera.com/videos/trailer-espanol-wonder-woman-1984/"^^xsd:anyURL .
+
+:Wonder_Woman_1984_ImageObject_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ImageObject ;
+    :contentUrl "https://m.media-amazon.com/images/M/MV5BZjQ0NGM2NGMtMDE1Yi00YzQyLWI1ZWYtMmQ2OWEzZTA5YjEyXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg"^^xsd:string .
+
+:Wonder_Woman_1984_ImageObject_1 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ImageObject ;
+    :url "https://img.ecartelera.com/carteles/13100/13170/009_p.jpg"^^xsd:anyURL .
+
+:Wonder_Woman_1984_Offer_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Offer ;
+    :availabilityStarts "2019-12-08T22:30:37"^^xsd:dateTime ;
+    :category "free"^^xsd:string ;
+    sch:eligibleRegion :Country_ES .
+
+:Wonder_Woman_1984_Organization_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :url "/company/co0028338/"^^xsd:anyURL .
+
+:Wonder_Woman_1984_Organization_1 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :url "/company/co0038332/"^^xsd:anyURL .
+
+:Wonder_Woman_1984_Organization_2 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :url "/company/co0283444/"^^xsd:anyURL .
+
+:Wonder_Woman_1984_Organization_3 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :url "/company/co0728674/"^^xsd:anyURL .
+
+:Wonder_Woman_1984_Organization_4 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :url "/company/co0002663/"^^xsd:anyURL .
+
+:Wonder_Woman_1984_PublicationEvent_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:PublicationEvent ;
+    :startDate "2020-12-18T00:00:00"^^xsd:dateTime ;
+    sch:location :Country_ES .
+
+:Wonder_Woman_1984_Rating_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "10.0"^^xsd:float ;
+    :ratingValue "5.0"^^xsd:float ;
+    :worstRating "1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_1 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_10 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_11 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_12 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_13 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_14 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_15 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_16 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_17 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_18 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_19 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_2 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_20 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_21 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_22 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_23 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_24 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "-1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_3 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_4 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_5 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_6 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_7 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_8 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Rating_9 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Rating ;
+    :bestRating "1.0"^^xsd:float ;
+    :ratingValue "1"^^xsd:float ;
+    :worstRating "-1.0"^^xsd:float .
+
+:Wonder_Woman_1984_Review_Amy_Nicholson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-01-04T03:37:14-08:00"^^xsd:dateTime ;
+    :reviewBody "Very sweet and very fun. I think some of the stunts are a little bit dumb, but I had a lot of watching this."^^xsd:string ;
+    :url "https://www.scpr.org/programs/filmweek/2020/12/23/66369/filmweek-wonder-woman-1984-soul-promising-young-wo/"^^xsd:anyURL ;
+    sch:author :Person_Amy_Nicholson ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_FilmWeek_(KPCC_-_NPR_Los_Angeles)> ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_3 .
+
+:Wonder_Woman_1984_Review_Andrew_Galdi a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-03-11T06:02:25-08:00"^^xsd:dateTime ;
+    :reviewBody "There were just such gross failures of filmmaking..."^^xsd:string ;
+    :url "https://youtu.be/75nDMuZMfLs"^^xsd:anyURL ;
+    sch:author :Person_Andrew_Galdi ;
+    sch:publisher :Organization_Movie_Bitches ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_10 .
+
+:Wonder_Woman_1984_Review_Avaryl_Halley a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-03-11T05:51:39-08:00"^^xsd:dateTime ;
+    :reviewBody "At least \"Justice League\" had at the decency to be short"^^xsd:string ;
+    :url "https://youtu.be/75nDMuZMfLs"^^xsd:anyURL ;
+    sch:author :Person_Avaryl_Halley ;
+    sch:publisher :Organization_Movie_Bitches ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_11 .
+
+:Wonder_Woman_1984_Review_Brian_Gill a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-10T06:48:34-08:00"^^xsd:dateTime ;
+    :reviewBody "I have sorely missed this sort of big budget popcorn flick through this never-ending pandemic and Wonder Woman succeeds in filling that gap, though only by the slimmest of margins. "^^xsd:string ;
+    :url "http://madaboutmoviespodcast.com/episodes/2020/12/29/wonder-woman-1984"^^xsd:anyURL ;
+    sch:author :Person_Brian_Gill ;
+    sch:publisher :Organization_Mad_About_Movies_Podcast ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_18 .
+
+:Wonder_Woman_1984_Review_Dan_Tabor a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-05T01:55:00-08:00"^^xsd:dateTime ;
+    :reviewBody "WW84 is a near perfect superhero film that outshines the original with its infectious sense of joy and optimism and nuanced deconstruction of the power of truth and how that can be a tool of good or evil. "^^xsd:string ;
+    :url "http://www.phawker.com/2020/12/23/cinema-waiting-for-gadot/"^^xsd:anyURL ;
+    sch:author :Person_Dan_Tabor ;
+    sch:publisher :Organization_Phawker ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_21 .
+
+:Wonder_Woman_1984_Review_David_Bax a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-03-23T10:02:10-07:00"^^xsd:dateTime ;
+    :reviewBody "Where too many directors of these types of films use their visual effects budget to imagine new levels of destruction, Jenkins would rather show us the novel beauty of an invisible jet soaring through a sky full of fireworks."^^xsd:string ;
+    :url "https://battleshippretension.com/wonder-woman-1984-go-ahead-and-jump-by-david-bax/"^^xsd:anyURL ;
+    sch:author :Person_David_Bax ;
+    sch:publisher :Organization_Battleship_Pretension ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_8 .
+
+:Wonder_Woman_1984_Review_David_Sims a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2020-12-28T07:45:33-08:00"^^xsd:dateTime ;
+    :reviewBody "It's a refreshingly silly and airy adventure focused on the emotions of one character, Wonder Woman (played by Gal Gadot), and a charming end to a tiring year of cinema."^^xsd:string ;
+    :url "https://www.theatlantic.com/culture/archive/2020/12/wonder-woman-1984-movie-review/617470/"^^xsd:anyURL ;
+    sch:author :Person_David_Sims ;
+    sch:publisher :Organization_The_Atlantic ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_6 .
+
+:Wonder_Woman_1984_Review_Eddie_Harrison a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-07T19:57:42-08:00"^^xsd:dateTime ;
+    :reviewBody "...a joyless dud, a bucket of sludge when we're crying out for a glass of water..."^^xsd:string ;
+    :url "https://film-authority.com/2021/01/11/wonder-woman-1984/"^^xsd:anyURL ;
+    sch:author :Person_Eddie_Harrison ;
+    sch:publisher :Organization_film-authority.com ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_19 .
+
+:Wonder_Woman_1984_Review_Eric_Marchen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-17T02:36:51-08:00"^^xsd:dateTime ;
+    :reviewBody "Feels like this would be better suited for an episode of TV than a 2.5 hour film."^^xsd:string ;
+    :url "https://untitledmoviepodcast.com/reviews/2020/12/27/wonder-woman-1984"^^xsd:anyURL ;
+    sch:author :Person_Eric_Marchen ;
+    sch:publisher :Organization_Untitled_Movie_Podcast ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_15 .
+
+:Wonder_Woman_1984_Review_Ian_Simmons a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-05T19:46:31-08:00"^^xsd:dateTime ;
+    :reviewBody "I'm not usually a fan of the \"multiple villain\" thing, but I thought it was handled pretty well here."^^xsd:string ;
+    :url "https://kickseat.com/podcast/ep623-when-you-wish-upon-a-sequel-wonder-woman-1984"^^xsd:anyURL ;
+    sch:author :Person_Ian_Simmons ;
+    sch:publisher :Organization_Kicking_the_Seat ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_20 .
+
+:Wonder_Woman_1984_Review_Jake_Wilson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2020-12-28T07:49:06-08:00"^^xsd:dateTime ;
+    :reviewBody "Gadot as Wonder Woman -- or Diana Prince, as she's more commonly known -- may be the single best piece of casting in a superhero role since Christopher Reeve first donned the cape and spandex of the Man of Steel."^^xsd:string ;
+    :url "https://www.theage.com.au/culture/movies/wonder-woman-1984-gal-gadot-soars-in-a-plot-that-doesn-t-aim-high-20201216-p56o4z.html"^^xsd:anyURL ;
+    sch:author :Person_Jake_Wilson ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_The_Age_(Australia)> ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_5 .
+
+:Wonder_Woman_1984_Review_Jennifer_Ouellette a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-11T02:38:41-08:00"^^xsd:dateTime ;
+    :reviewBody "While Wonder Woman 1984 still has a bit of the old magic, and its leads all turn in terrific performances, the film is hampered by a frequently nonsensical plot, extraneous showy action sequences, and it's way too heavy-handed with the moralizing."^^xsd:string ;
+    :url "https://arstechnica.com/gaming/2020/12/wonder-woman-1984-is-fun-but-doesnt-quite-capture-magic-of-its-predecessor/"^^xsd:anyURL ;
+    sch:author :Person_Jennifer_Ouellette ;
+    sch:publisher :Organization_Ars_Technica ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_17 .
+
+:Wonder_Woman_1984_Review_John_McDonald a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-01-31T18:14:33-08:00"^^xsd:dateTime ;
+    :reviewBody "One wonders how many more films will confirm the cast-iron law that every new Hollywood movie is really about Donald Trump?"^^xsd:string ;
+    :url "https://www.johnmcdonald.net.au/2021/wonder-woman-1984/"^^xsd:anyURL ;
+    sch:author :Person_John_McDonald ;
+    sch:publisher :Organization_Australian_Financial_Review ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_23 .
+
+:Wonder_Woman_1984_Review_Kevin_Carr a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-04-03T14:11:59-07:00"^^xsd:dateTime ;
+    :reviewBody "It's a fun movie, and it's got a lot of fun action in it. If you can get past the goofiness, it works."^^xsd:string ;
+    :url "http://www.fatguysatthemovies.com/episode-728-lizard-vs-ape/"^^xsd:anyURL ;
+    sch:author :Person_Kevin_Carr ;
+    sch:publisher :Organization_Fat_Guys_at_the_Movies ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_7 .
+
+:Wonder_Woman_1984_Review_Mark_Jackson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-02T10:00:09-08:00"^^xsd:dateTime ;
+    :reviewBody "\"Wonder Woman\" (2017) was one of the best superhero movies ever made. It was idealistic, classy, aesthetically pleasing, and romantic, and should've kicked off a fabulous franchise. Unfortunately the sequel is a major letdown."^^xsd:string ;
+    :url "https://www.theepochtimes.com/film-review-wonder-woman-1984-a-sequel-less-wonderful_3667828.html"^^xsd:anyURL ;
+    sch:author :Person_Mark_Jackson ;
+    sch:publisher :Organization_Epoch_Times ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_22 .
+
+:Wonder_Woman_1984_Review_Mark_Meszoros a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-13T23:57:56-08:00"^^xsd:dateTime ;
+    :reviewBody "There are plenty of good times to be had as we pick back up with Gal Gadot's Wonder Woman/Diana Prince six-plus decades after the World War I-set first tale."^^xsd:string ;
+    :url "https://www.news-herald.com/entertainment/movie-reviews/wonder-woman-1984-overdoes-it-but-what-made-first-movie-successful-alive-and-well-in/article_a0eed67e-453e-11eb-9aae-8774f60e37ce.html"^^xsd:anyURL ;
+    sch:author :Person_Mark_Meszoros ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_The_News-Herald_(Willoughby,_OH)> ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_16 .
+
+:Wonder_Woman_1984_Review_Matt_Neal a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-01-31T17:01:54-08:00"^^xsd:dateTime ;
+    :reviewBody " After such a stirring debut, it's pains me to say that Wonder Woman 1984 isn't that wonderful."^^xsd:string ;
+    :url "https://movies8mylife.blogspot.com/2021/02/wonder-woman-1984.html"^^xsd:anyURL ;
+    sch:author :Person_Matt_Neal ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_ABC_Radio_(Australia)> ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_24 .
+
+:Wonder_Woman_1984_Review_Nina_Garin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-03-01T08:14:02-08:00"^^xsd:dateTime ;
+    :reviewBody "Gadot is so skilled at bringing vulnerability to her battles - whether it's a physical fight with Maxwell Lord or an internal struggle about giving up the one thing she's ever desired. She embodies a true superhero, one who is inclusive and noble. "^^xsd:string ;
+    :url "https://www.sandiegouniontribune.com/entertainment/movies/story/2020-12-24/wonder-woman-1984"^^xsd:anyURL ;
+    sch:author :Person_Nina_Garin ;
+    sch:publisher :Organization_San_Diego_Union-Tribune ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_12 .
+
+:Wonder_Woman_1984_Review_Rafer_Guzman a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-01-04T04:59:29-08:00"^^xsd:dateTime ;
+    :reviewBody " A serviceable sequel, elevated by its radiant leading lady and an over-the-top villain."^^xsd:string ;
+    :url "https://www.newsday.com/entertainment/movies/wonder-woman-1984-review-1.50099436"^^xsd:anyURL ;
+    sch:author :Person_Rafer_Guzman ;
+    sch:publisher :Organization_Newsday ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_2 .
+
+:Wonder_Woman_1984_Review_Sarah_Ward a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-21T08:36:54-08:00"^^xsd:dateTime ;
+    :reviewBody "Wonder Woman 1984 doesn't spin the most complicated story, but it's so repetitive and meandering across its 151-minute running time that it's needlessly bulky, muddled and weighed down."^^xsd:string ;
+    :url "https://concreteplayground.com/sydney/event/wonder-woman-1984"^^xsd:anyURL ;
+    sch:author :Person_Sarah_Ward ;
+    sch:publisher :Organization_Concrete_Playground ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_14 .
+
+:Wonder_Woman_1984_Review_Sheri_Flanders a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-01T04:29:30-08:00"^^xsd:dateTime ;
+    :reviewBody "Wonder Woman 1984 is a technicolor, lighthearted romp through the era of Jazzercise, big hair, and even bigger shoulder pads."^^xsd:string ;
+    :url "https://www.chicagoreader.com/chicago/wonder-woman-1984/Film?oid=85354160"^^xsd:anyURL ;
+    sch:author :Person_Sheri_Flanders ;
+    sch:publisher :Organization_Chicago_Reader ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_1 .
+
+:Wonder_Woman_1984_Review_Stephen_Romei a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2020-12-29T12:09:48-08:00"^^xsd:dateTime ;
+    :reviewBody "I assume there will be a sequel to this sequel. If so, no complaint from me, especially if Wiig and Pascal are in it. "^^xsd:string ;
+    :url "https://www.theaustralian.com.au/arts/review/wonder-woman-a-superhero-for-these-unpredictable-times/news-story/07c2cdcdf7699c36c2fa44d8e003acb8"^^xsd:anyURL ;
+    sch:author :Person_Stephen_Romei ;
+    sch:publisher :Organization_The_Australian ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_4 .
+
+:Wonder_Woman_1984_Review_Tony_Medley a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-02-22T06:02:11-08:00"^^xsd:dateTime ;
+    :reviewBody "It is even more absurd than the first one that grossly distorted history. Gal Gadot's delivery makes Tony Curtis', \"Yonda Lies Da Castle of My Fodda,\" seem Shakespearean."^^xsd:string ;
+    :url "http://www.tonymedley.com/2020/Wonder_Woman_1984.htm"^^xsd:anyURL ;
+    sch:author :Person_Tony_Medley ;
+    sch:publisher :Organization_The_Larchmont_Chronicle ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_13 .
+
+:Wonder_Woman_1984_Review_Valerie_Kalfrin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-03-20T08:54:50-07:00"^^xsd:dateTime ;
+    :reviewBody "With its message of kindness and empathy, \"Wonder Woman 1984\" offers a soothing balm in a pandemic-weary year, even if getting there is a muddled journey."^^xsd:string ;
+    :url "https://intheirownleague.com/2020/12/29/review-wonder-woman-1984/"^^xsd:anyURL ;
+    sch:author :Person_Valerie_Kalfrin ;
+    sch:publisher :Organization_Their_Own_League ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_9 .
+
+:Wonder_Woman_1984_Review_jayg_58 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Review ;
+    :dateCreated "2021-01-01T00:00:00"^^xsd:dateTime ;
+    :inLanguage "English"^^xsd:string ;
+    :name "In quarantine, you'll buy anything."^^xsd:string ;
+    :reviewBody "Very colorful, lots of money spent. Kristin Wiig was a masterpiece of miscasting. She wasn't funny; she wasn't scary, but great costume. The whole plot was a vehicle to resurrect Chris Pine, but there was no real chemistry between them. It made the lines of endearment quite awkward and the embraces seemed forced. All the usual tropes: WW loses some of her powers, so there can be suspense; she plays Spiderman and holds two vehicles apart. Just nothing new and Gad Gadot proves again that she's a glamour model and poses well. She can't act. Still - entertainment in a vacuum of good movies, so watch it and be distracted for TWO AND A HALF hours."^^xsd:string ;
+    sch:author :Person_jayg_58 ;
+    sch:itemReviewed :Wonder_Woman_1984_CreativeWork_0 ;
+    sch:reviewRating :Wonder_Woman_1984_Rating_0 .
+
+:Wonder_Woman_1984_VideoObject_Stream_on_HBO_Max_for_a_Limited_Time a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:VideoObject ;
+    :description "Fast forward to the 1980s as Wonder Woman’s next big screen adventure finds her facing two all-new foes: Max Lord and The Cheetah."^^xsd:string ;
+    :embedUrl "/video/imdb/vi3240214809"^^xsd:anyURL ;
+    :name "Stream on HBO Max for a Limited Time"^^xsd:string ;
+    :thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjQ0NGM2NGMtMDE1Yi00YzQyLWI1ZWYtMmQ2OWEzZTA5YjEyXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg"^^xsd:anyURL ;
+    :uploadDate "2020-12-07T01:51:07+00:00"^^xsd:dateTime ;
+    sch:thumbnail :Wonder_Woman_1984_ImageObject_0 .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Wonder_Woman_1984_VideoObject_Wonder_Woman_1984_(Trailer_2)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:VideoObject ;
+    :description "Video Clip of Wonder Woman 1984"^^xsd:string ;
+    :name "Wonder Woman 1984 (Trailer 2)"^^xsd:string ;
+    :thumbnailUrl "https://content.internetvideoarchive.com/content/hdphotos/13126/013126/013126_820x461_637413475681110755.jpg"^^xsd:anyURL ;
+    :uploadDate "2020-11-21T17:41:36"^^xsd:dateTime .
+
+:Wonder_Woman_1984_WatchAction_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:WatchAction ;
+    sch:expectsAcceptanceOf :Wonder_Woman_1984_Offer_0 ;
+    sch:target :Wonder_Woman_1984_EntryPoint_0 .
+
+:Country_ES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "ES"^^xsd:string .
+
+:Organization_Movie_Bitches a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Movie Bitches"^^xsd:string ;
+    :url "https://www.rottentomatoes.com/source-3639"^^xsd:anyURL .
+
+:Organization_Warner_Bros._Pictures a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :mainEntityOfPage "https://www.ecartelera.com/empresas/warner-bros/"^^xsd:anyURL ;
+    :name "Warner Bros. Pictures"^^xsd:string ;
+    :url "https://www.metacritic.com/company/warner-bros-pictures"^^xsd:anyURL .
+
+:Person_Chris_Pine a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :image "https://resizing.flixster.com/kXDRe1jUWEU8UFkdf8JhRPMUG8s=/660x990/v1.bjs3NTYxMDQ7ajsxODgxODsxMjAwOzY2MDs5OTA"^^xsd:anyURL ;
+    :mainEntityOfPage "https://www.ecartelera.com/personas/chris-pine/"^^xsd:anyURL ;
+    :name "Chris Pine"^^xsd:string ;
+    :sameAs "https://www.rottentomatoes.com/celebrity/christopher_pine"^^xsd:anyURL ;
+    :url "/name/nm1517976/"^^xsd:anyURL,
+        "https://www.metacritic.com/person/chris-pine"^^xsd:anyURL .
+
+:Person_Connie_Nielsen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :image "https://resizing.flixster.com/9KfyO3m2pAvZAVHAEY2rGGM2PJA=/2938x3500/v1.cjs1MDM1NztqOzE4ODEwOzEyMDA7MjkzODszNTAw"^^xsd:anyURL ;
+    :mainEntityOfPage "https://www.ecartelera.com/personas/connie-nielsen/"^^xsd:anyURL ;
+    :name "Connie Nielsen"^^xsd:string ;
+    :sameAs "https://www.rottentomatoes.com/celebrity/connie_nielsen"^^xsd:anyURL ;
+    :url "https://www.metacritic.com/person/connie-nielsen"^^xsd:anyURL .
+
+:Person_Gal_Gadot a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :image "https://resizing.flixster.com/dLV_qSUTi18Sb6W9904IUCOm8i8=/633x704/v1.cjs0Mjc1NjtwOzE4ODEwOzEyMDA7NjMzOzcwNA"^^xsd:anyURL ;
+    :mainEntityOfPage "https://www.ecartelera.com/personas/gal-gadot/"^^xsd:anyURL ;
+    :name "Gal Gadot"^^xsd:string ;
+    :sameAs "https://www.rottentomatoes.com/celebrity/gal-gadot"^^xsd:anyURL ;
+    :url "/name/nm2933757/"^^xsd:anyURL,
+        "https://www.metacritic.com/person/gal-gadot"^^xsd:anyURL .
+
+:Person_Kristen_Wiig a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :image "https://resizing.flixster.com/i99pcM4wMZMqPEVkLFp2GB17UXc=/2000x2083/v1.cjs0OTMxNjtqOzE4ODEwOzEyMDA7MjAwMDsyMDgz"^^xsd:anyURL ;
+    :mainEntityOfPage "https://www.ecartelera.com/personas/kristen-wiig/"^^xsd:anyURL ;
+    :name "Kristen Wiig"^^xsd:string ;
+    :sameAs "https://www.rottentomatoes.com/celebrity/kristen_wiig"^^xsd:anyURL ;
+    :url "/name/nm1325419/"^^xsd:anyURL,
+        "https://www.metacritic.com/person/kristen-wiig"^^xsd:anyURL .
+
+:Person_Pedro_Pascal a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :image "https://resizing.flixster.com/Y4GD2HB5QLiRYLWxPU8iRb9o8-Q=/220x196/v1.cjs0NDAwMDtqOzE4ODEwOzEyMDA7MjIwOzE5Ng"^^xsd:anyURL ;
+    :mainEntityOfPage "https://www.ecartelera.com/personas/pedro-pascal/"^^xsd:anyURL ;
+    :name "Pedro Pascal"^^xsd:string ;
+    :sameAs "https://www.rottentomatoes.com/celebrity/pedro_pascal"^^xsd:anyURL ;
+    :url "/name/nm0050959/"^^xsd:anyURL,
+        "https://www.metacritic.com/person/pedro-pascal"^^xsd:anyURL .
+
+:Person_Robin_Wright a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :image "https://resizing.flixster.com/s5rTePWBzCqGE8uYUIYqS52D6JU=/1000x1500/v1.bjs3NDQ4MjY7ajsxODgxODsxMjAwOzEwMDA7MTUwMA"^^xsd:anyURL ;
+    :mainEntityOfPage "https://www.ecartelera.com/personas/robin-wright/"^^xsd:anyURL ;
+    :name "Robin Wright"^^xsd:string ;
+    :sameAs "https://www.rottentomatoes.com/celebrity/robin_wright"^^xsd:anyURL ;
+    :url "https://www.metacritic.com/person/robin-wright"^^xsd:anyURL .
+
+:Person_Patty_Jenkins a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :mainEntityOfPage "https://www.ecartelera.com/personas/patty-jenkins/"^^xsd:anyURL ;
+    :name "Patty Jenkins"^^xsd:string ;
+    :sameAs "https://www.rottentomatoes.com/celebrity/patty_jenkins"^^xsd:anyURL ;
+    :url "/name/nm0420941/"^^xsd:anyURL,
+        "https://www.metacritic.com/person/patty-jenkins"^^xsd:anyURL .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:MovieTheater_CINEMA_CITY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:MovieTheater ;
+    :name "CINEMA CITY"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_CITY_4D_Godzilla_Vs._Kong,
+        :ScreeningEvent_CINEMA_CITY_HD_Hermosa_Venganza,
+        :ScreeningEvent_CINEMA_CITY_HD_Los_Nuevos_Mutantes,
+        :ScreeningEvent_CINEMA_CITY_HD_Raya_Y_El_Ultimo_Dragon .
+
+:MovieTheater_CINEMA_OCHO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:MovieTheater ;
+    :name "CINEMA OCHO"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_OCHO_HD_Godzilla_Vs._Kong,
+        :ScreeningEvent_CINEMA_OCHO_HD_Los_Nuevos_Mutantes,
+        :ScreeningEvent_CINEMA_OCHO_HD_Raya_Y_El_Ultimo_Dragon .
+
+:MovieTheater_CINEMA_PARADISO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:MovieTheater ;
+    :name "CINEMA PARADISO"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_PARADISO_HD_Godzilla_Vs._Kong,
+        :ScreeningEvent_CINEMA_PARADISO_HD_Habitacion_212,
+        :ScreeningEvent_CINEMA_PARADISO_HD_La_Fabrica_De_Sueños,
+        :ScreeningEvent_CINEMA_PARADISO_HD_La_Noche_Magica,
+        :ScreeningEvent_CINEMA_PARADISO_HD_Raya_Y_El_Ultimo_Dragon,
+        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!>,
+        :ScreeningEvent_CINEMA_PARADISO_HD_Tenet,
+        :ScreeningEvent_CINEMA_PARADISO_HD_Tom_Y_Jerry .
+
+:MovieTheater_CINEMA_ROCHA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:MovieTheater ;
+    :name "CINEMA ROCHA"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_ROCHA_HD_Godzilla_Vs._Kong,
+        :ScreeningEvent_CINEMA_ROCHA_HD_Los_Nuevos_Mutantes,
+        :ScreeningEvent_CINEMA_ROCHA_HD_Mujer_Maravilla_1984,
+        :ScreeningEvent_CINEMA_ROCHA_HD_Raya_Y_El_Ultimo_Dragon,
+        :ScreeningEvent_CINEMA_ROCHA_HD_Tom_Y_Jerry .
+
+:MovieTheater_CINEMA_SAN_MARTIN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:MovieTheater ;
+    :name "CINEMA SAN MARTIN"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Caos:_El_Inicio,
+        :ScreeningEvent_CINEMA_SAN_MARTIN_HD_El_Secreto_Del_Bosque,
+        :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Godzilla_Vs._Kong,
+        :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Los_Intrusos,
+        :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Los_Nuevos_Mutantes,
+        :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Tom_Y_Jerry,
+        :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Trolls_2:_World_Tour .
+
+:Country_Alemania a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "Alemania"^^xsd:string .
+
+:Country_Argentina a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "Argentina"^^xsd:string .
+
+:Country_Francia a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "Francia"^^xsd:string .
+
+:Country_Reino_Unido_-_Francia a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "Reino Unido - Francia"^^xsd:string .
+
+:Movie_Caos:_El_Inicio a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "En Prentisstown, Todd ha crecido creyendo que la \"Masilla\" fue la responsable de liberar un germen que asesinó a todas las mujeres y contagió con el \"ruido\" al resto de los hombres. Tras descubrir un remanso de silencio en un pantano, sus padres adoptivos le obligan a huir lo más rápido que pueda, dejando todo atrás salvo un mapa del Nuevo Mundo y un mensaje, así como un sinfín de preguntas sin responder. Pronto descubre la fuente del silencio: una chica llamada Viola. Los dos deben avisar lo antes posible sobre la inminente llegada de una nave para que el intendente Prentiss pueda preparar un ejército para la guerra."^^xsd:string ;
+    :duration 109 ;
+    :genre "Ciencia Ficción"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Caos: El Inicio"^^xsd:string ;
+    sch:actor :Person_Daisy_Ridley,
+        :Person_David_Oyelowo,
+        :Person_Demián_Bichir,
+        :Person_Mads_Mikkelsen,
+        :Person_Nick_Jonas,
+        :Person_Tom_Holland ;
+    sch:director :Person_Doug_Liman ;
+    sch:locationCreated :Country_EEUU .
+
+:Movie_El_Secreto_Del_Bosque a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Mientras disfrutan de una escapada romántica en la India salvaje, una pareja de Los Angeles accidentalmente es testigo del exorcismo de una niña de 11 años a la cual intentarán rescatar."^^xsd:string ;
+    :duration 87 ;
+    :genre "Terror"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "El Secreto Del Bosque"^^xsd:string ;
+    sch:actor :Person_Sahil_Shroff,
+        :Person_Subrat_Dutta,
+        :Person_Vanessa_Curry ;
+    sch:director :Person_Vikram_Jayakumar ;
+    sch:locationCreated :Country_EEUU .
+
+:Movie_Habitacion_212 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Tras 20 años de matrimonio, Maria decide dejarlo todo atrás y empezar una nueva vida. El primer paso es hospedarse en la habitación 212 de un hotel próximo a la casa en la que vivía junto a su familia. Con el paso del tiempo, comienza a preguntarse si ha tomado la decisión correcta."^^xsd:string ;
+    :duration 87 ;
+    :genre "Comedia dramática"^^xsd:string ;
+    :inLanguage "Francés subtitulado"^^xsd:string ;
+    :name "Habitacion 212"^^xsd:string ;
+    sch:actor :Person_Benjamin_Biolay,
+        :Person_Camille_Cottin,
+        :Person_Carole_Bouquet,
+        :Person_Chiara_Mastroianni,
+        :Person_Marie-Christine_Adam,
+        :Person_Vincent_Lacoste ;
+    sch:director :Person_Christophe_Honoré ;
+    sch:locationCreated :Country_Francia .
+
+:Movie_Hermosa_Venganza a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 16 años"^^xsd:string ;
+    :description "Una joven mujer traumatizada por un evento trágico ocurrido en su pasado, busca venganza contra los hombres que se cruzaron por su camino."^^xsd:string ;
+    :duration 117 ;
+    :genre "Thriller"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Hermosa Venganza"^^xsd:string ;
+    sch:actor :Person_Adam_Brody,
+        :Person_Bo_Burnham,
+        :Person_Carey_Mulligan,
+        :Person_Christopher_Mintz-Plasse,
+        :Person_Clancy_Brown,
+        :Person_Jennifer_Coolidge,
+        :Person_Molly_Shannon ;
+    sch:director :Person_Emerald_Fennell ;
+    sch:locationCreated :Country_EEUU .
+
+:Movie_La_Fabrica_De_Sueños a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta todo público"^^xsd:string ;
+    :description "Durante el verano de 1961, Emil comienza a trabajar como extra en los famosos estudios de cine Babelsberg. Durante el rodaje de una superproducción, se enamora de la bailarina francesa llamada Milou. Cuando por fin conquista a Milou, el rodaje se cancela repentinamente y son obligados a separarse ya que El Muro de Berlín es levantado en agosto de ese año. Años más tarde, Emil trazará un atrevido y arriesgado plan para lograr que el rodaje continúe y reencontrarse con Milou."^^xsd:string ;
+    :duration 127 ;
+    :genre "Drama romantico"^^xsd:string ;
+    :inLanguage "Aleman subtitulada"^^xsd:string ;
+    :name "La Fabrica De Sueños"^^xsd:string ;
+    sch:actor :Person_Dennis_Mojen,
+        :Person_Emilia_Schüle,
+        :Person_Heiner_Lauterbach,
+        :Person_Ken_Duken,
+        :Person_Michael_Gwisdek,
+        :Person_Nikolai_Kinski,
+        :Person_Wilfried_Hochholdinger ;
+    sch:director :Person_Martin_Schreier ;
+    sch:locationCreated :Country_Alemania .
+
+:Movie_La_Noche_Magica a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 16 años"^^xsd:string ;
+    :description """Es 24 de diciembre, víspera de Navidad. En una casa tranquila en San Isidro donde vive un matrimonio con su pequeña hija, un ladrón  espera su momento para entrar a robar. Para su sorpresa, se encontrará primero con el amante de la señora de la casa al cual obligará a participar en el robo.\r
+Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá Noel y le pedirá cumplir su lista de deseos navideños"""^^xsd:string ;
+    :duration 98 ;
+    :genre "Comedia"^^xsd:string ;
+    :inLanguage "Castellano"^^xsd:string ;
+    :name "La Noche Magica"^^xsd:string ;
+    sch:actor :Person_Diego_Peretti,
+        :Person_Esteban_Bigliardi,
+        :Person_Natalia_Oreiro,
+        :Person_Pablo_Rago ;
+    sch:director :Person_Gastón_Portal ;
+    sch:locationCreated :Country_Argentina .
+
+:Movie_Los_Intrusos a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 16 años"^^xsd:string ;
+    :description "Inglaterra rural, principios de los noventa: los amigos de la infancia Nathan y Terry son inducidos por el sociópata local para robar a los Huggins, un médico anciano y su esposa. La novia de Nathan, Mary, está totalmente en contra del plan, pero al cabo de unas horas se encuentra en el caserón, al lado de la caja fuerte del sótano y de una panda de individuos, a cual más sospechoso."^^xsd:string ;
+    :duration 92 ;
+    :genre "Terror"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Los Intrusos"^^xsd:string ;
+    sch:actor :Person_Andrew_Ellis,
+        :Person_Ian_Kenny,
+        :Person_Jake_Curran,
+        :Person_Maisie_Williams,
+        :Person_Rita_Tushingham,
+        :Person_Stacha_Hicks,
+        :Person_Sylvester_McCoy ;
+    sch:director :Person_Julius_Berg ;
+    sch:locationCreated :Country_Reino_Unido_-_Francia .
+
+:Movie_Mujer_Maravilla_1984 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Ambientada en los años 80s. El mayor deseo de Diana Prince parece ser tener devuelta a Steve Trevor. Esto inexplicablemente parece haberse convertido en realidad, pero la enfrentará a dos nuevos villanos: Max Lord y Cheetah"^^xsd:string ;
+    :duration 151 ;
+    :genre "Acción"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Mujer Maravilla 1984"^^xsd:string ;
+    sch:actor :Person_Chris_Pine,
+        :Person_Connie_Nielsen,
+        :Person_Gabriella_Wilde,
+        :Person_Gal_Gadot,
+        :Person_Kristen_Wiig,
+        :Person_Natasha_Rothwell,
+        :Person_Pedro_Pascal,
+        :Person_Ravi_Patel,
+        :Person_Robin_Wright ;
+    sch:director :Person_Patty_Jenkins ;
+    sch:locationCreated :Country_EEUU .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Movie_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta todo público"^^xsd:string ;
+    :description """Película animada sobre el dibujito Scooby-Doo que sigue a un perro Gran Danés y sus 4 amigos: Fred, Daphne, Vilma y Shaggy quienes juntos viajan por el mundo resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales.-\r
+Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y cómo se unieron con los jóvenes detectives Fred, Velma y Daphne para formar Mystery Inc. Ahora, con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más desafiante de todos los tiempos: una trama para liberar Cerberus, el perro fantasma, sobre el mundo. Mientras compiten para detener este "perrocalipsis" global, la pandilla descubre que Scooby tiene un legado secreto y un gran y épico destino que nadie imaginaba."""^^xsd:string ;
+    :duration 94 ;
+    :genre "Acción"^^xsd:string,
+        "Aventuras"^^xsd:string ;
+    :inLanguage "Castellano"^^xsd:string ;
+    :name "Scooby!"^^xsd:string ;
+    sch:actor :Person_animación ;
+    sch:director :Person_Tony_Cervone ;
+    sch:locationCreated :Country_EEUU .
+
+:Movie_Tenet a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Armado con tan solo una palabra -Tenet- el protagonista de esta historia deberá pelear por la supervivencia del mundo entero en una misión que le lleva a viajar a través del oscuro mundo del espionaje internacional, y cuya experiencia se desdoblará más allá del tiempo lineal."^^xsd:string ;
+    :duration 150 ;
+    :genre "Ciencia Ficción"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Tenet"^^xsd:string ;
+    sch:actor :Person_Aaron_Taylor-Johnson,
+        :Person_Clemence_Poésy,
+        :Person_Elizabeth_Debicki,
+        :Person_John_David_Washington._Kenneth_Branagh,
+        :Person_Michael_Caine,
+        :Person_Robert_Pattinson ;
+    sch:director :Person_Christopher_Nolan ;
+    sch:locationCreated :Country_EEUU .
+
+:Movie_Trolls_2:_World_Tour a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta todo público"^^xsd:string ;
+    :description "En una aventura que les llevará más allá de todo lo que habían conocido, Poppy y Branch descubren que su tribu de Trolls es solo una de las seis que existen, que el resto están repartidas en seis reinos y consagradas a seis tipos distintos de música: funk, country, tecno, clásica, pop y rock. La reina Bárbara, miembro de la realeza del hard rock, y su padre, el Rey Metal, quieren acabar con el resto de géneros musicales e imponer el reinado del rock. Con el destino del mundo en juego, Poppy y Branch, junto con el resto de la pandilla - Grandullón, Chanelle, Satén, Cooper y Guy Diamante-, visitarán los demás reinos para unir a los Trolls contra los planes de Barb de eclipsarlos a todos."^^xsd:string ;
+    :duration 91 ;
+    :genre "Animación"^^xsd:string ;
+    :inLanguage "Castellano"^^xsd:string ;
+    :name "Trolls 2: World Tour"^^xsd:string ;
+    sch:actor :Person_animación ;
+    sch:director :Person_David_P_Smith,
+        :Person_Walt_Dohrn ;
+    sch:locationCreated :Country_EEUU .
+
+:Person_Aaron_Taylor-Johnson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Aaron Taylor-Johnson"^^xsd:string .
+
+:Person_Adam_Brody a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Adam Brody"^^xsd:string .
+
+:Person_Adam_Wingard a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Adam Wingard"^^xsd:string .
+
+:Person_Alexander_Skarsgård a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Alexander Skarsgård"^^xsd:string .
+
+:Person_Andrew_Ellis a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Andrew Ellis"^^xsd:string .
+
+:Person_Antonio_Banderas a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Antonio Banderas"^^xsd:string .
+
+:Person_Anya_Taylor-Joy a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Anya Taylor-Joy"^^xsd:string .
+
+:Person_Awkwafina a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Awkwafina"^^xsd:string .
+
+:Person_Benjamin_Biolay a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Benjamin Biolay"^^xsd:string .
+
+:Person_Blu_Hunt a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Blu Hunt"^^xsd:string .
+
+:Person_Bo_Burnham a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Bo Burnham"^^xsd:string .
+
+:Person_Camille_Cottin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Camille Cottin"^^xsd:string .
+
+:Person_Carey_Mulligan a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Carey Mulligan"^^xsd:string .
+
+:Person_Carlos_Lopez_Estrada a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Carlos Lopez Estrada"^^xsd:string .
+
+:Person_Carole_Bouquet a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Carole Bouquet"^^xsd:string .
+
+:Person_Charlie_Heaton a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Charlie Heaton"^^xsd:string .
+
+:Person_Chiara_Mastroianni a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Chiara Mastroianni"^^xsd:string .
+
+:Person_Chris_Pine a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Chris Pine"^^xsd:string .
+
+:Person_Christophe_Honoré a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Christophe Honoré"^^xsd:string .
+
+:Person_Christopher_Mintz-Plasse a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Christopher Mintz-Plasse"^^xsd:string .
+
+:Person_Christopher_Nolan a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Christopher Nolan"^^xsd:string .
+
+:Person_Clancy_Brown a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Clancy Brown"^^xsd:string .
+
+:Person_Clemence_Poésy a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Clemence Poésy"^^xsd:string .
+
+:Person_Connie_Nielsen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Connie Nielsen"^^xsd:string .
+
+:Person_Daisy_Ridley a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Daisy Ridley"^^xsd:string .
+
+:Person_Daniel_Dae_Kim a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Daniel Dae Kim"^^xsd:string .
+
+:Person_David_Oyelowo a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "David Oyelowo"^^xsd:string .
+
+:Person_David_P_Smith a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "David P Smith"^^xsd:string .
+
+:Person_Demian_Bichir a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Demian Bichir"^^xsd:string .
+
+:Person_Demián_Bichir a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Demián Bichir"^^xsd:string .
+
+:Person_Dennis_Mojen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Dennis Mojen"^^xsd:string .
+
+:Person_Diego_Peretti a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Diego Peretti"^^xsd:string .
+
+:Person_Don_Hall a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Don Hall"^^xsd:string .
+
+:Person_Doug_Liman a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Doug Liman"^^xsd:string .
+
+:Person_Eiza_González a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Eiza González"^^xsd:string .
+
+:Person_Elizabeth_Debicki a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Elizabeth Debicki"^^xsd:string .
+
+:Person_Emerald_Fennell a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Emerald Fennell"^^xsd:string .
+
+:Person_Emilia_Schüle a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Emilia Schüle"^^xsd:string .
+
+:Person_Esteban_Bigliardi a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Esteban Bigliardi"^^xsd:string .
+
+:Person_Gabriella_Wilde a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Gabriella Wilde"^^xsd:string .
+
+:Person_Gal_Gadot a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Gal Gadot"^^xsd:string .
+
+:Person_Gastón_Portal a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Gastón Portal"^^xsd:string .
+
+:Person_Happy_Anderson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Happy Anderson"^^xsd:string .
+
+:Person_Heiner_Lauterbach a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Heiner Lauterbach"^^xsd:string .
+
+:Person_Henry_Zaga a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Henry Zaga"^^xsd:string .
+
+:Person_Ian_Kenny a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ian Kenny"^^xsd:string .
+
+:Person_Jake_Curran a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jake Curran"^^xsd:string .
+
+:Person_Jennifer_Coolidge a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jennifer Coolidge"^^xsd:string .
+
+:Person_John_David_Washington._Kenneth_Branagh a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "John David Washington. Kenneth Branagh"^^xsd:string .
+
+:Person_Josh_Boone a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Josh Boone"^^xsd:string .
+
+:Person_Julius_Berg a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Julius Berg"^^xsd:string .
+
+:Person_Kelly_Marie_Tran a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kelly Marie Tran"^^xsd:string .
+
+:Person_Ken_Duken a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ken Duken"^^xsd:string .
+
+:Person_Kristen_Wiig a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kristen Wiig"^^xsd:string .
+
+:Person_Kyle_Chandler a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kyle Chandler"^^xsd:string .
+
+:Person_Mads_Mikkelsen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Mads Mikkelsen"^^xsd:string .
+
+:Person_Marie-Christine_Adam a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Marie-Christine Adam"^^xsd:string .
+
+:Person_Martin_Schreier a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Martin Schreier"^^xsd:string .
+
+:Person_Michael_Caine a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Michael Caine"^^xsd:string .
+
+:Person_Michael_Gwisdek a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Michael Gwisdek"^^xsd:string .
+
+:Person_Millie_Bobby_Brown a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Millie Bobby Brown"^^xsd:string .
+
+:Person_Molly_Shannon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Molly Shannon"^^xsd:string .
+
+:Person_Natalia_Oreiro a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Natalia Oreiro"^^xsd:string .
+
+:Person_Natasha_Rothwell a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Natasha Rothwell"^^xsd:string .
+
+:Person_Nick_Jonas a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Nick Jonas"^^xsd:string .
+
+:Person_Nikolai_Kinski a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Nikolai Kinski"^^xsd:string .
+
+:Person_Pablo_Rago a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Pablo Rago"^^xsd:string .
+
+:Person_Patty_Jenkins a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Patty Jenkins"^^xsd:string .
+
+:Person_Paul_Briggs a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Paul Briggs"^^xsd:string .
+
+:Person_Pedro_Pascal a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Pedro Pascal"^^xsd:string .
+
+:Person_Ravi_Patel a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ravi Patel"^^xsd:string .
+
+:Person_Rebecca_Hall a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Rebecca Hall"^^xsd:string .
+
+:Person_Rita_Tushingham a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Rita Tushingham"^^xsd:string .
+
+:Person_Robert_Pattinson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Robert Pattinson"^^xsd:string .
+
+:Person_Robin_Wright a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Robin Wright"^^xsd:string .
+
+:Person_Rosario_Dawson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Rosario Dawson"^^xsd:string .
+
+:Person_Sahil_Shroff a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Sahil Shroff"^^xsd:string .
+
+:Person_Shun_Oguri a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Shun Oguri"^^xsd:string .
+
+:Person_Stacha_Hicks a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Stacha Hicks"^^xsd:string .
+
+:Person_Subrat_Dutta a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Subrat Dutta"^^xsd:string .
+
+:Person_Sylvester_McCoy a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Sylvester McCoy"^^xsd:string .
+
+:Person_Tim_Story a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Tim Story"^^xsd:string .
+
+:Person_Tom_Holland a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Tom Holland"^^xsd:string .
+
+:Person_Tony_Cervone a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Tony Cervone"^^xsd:string .
+
+:Person_Vanessa_Curry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Vanessa Curry"^^xsd:string .
+
+:Person_Vikram_Jayakumar a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Vikram Jayakumar"^^xsd:string .
+
+:Person_Vincent_Lacoste a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Vincent Lacoste"^^xsd:string .
+
+:Person_Walt_Dohrn a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Walt Dohrn"^^xsd:string .
+
+:Person_Wilfried_Hochholdinger a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Wilfried Hochholdinger"^^xsd:string .
+
+:ScreeningEvent_CINEMA_CITY_4D_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:30:00"^^xsd:dateTime,
+        "1900-01-01T18:05:00"^^xsd:dateTime,
+        "1900-01-01T20:40:00"^^xsd:dateTime,
+        "1900-01-01T23:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
+
+:ScreeningEvent_CINEMA_CITY_HD_Hermosa_Venganza a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:15:00"^^xsd:dateTime,
+        "1900-01-01T15:40:00"^^xsd:dateTime,
+        "1900-01-01T18:10:00"^^xsd:dateTime,
+        "1900-01-01T20:30:00"^^xsd:dateTime,
+        "1900-01-01T23:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Hermosa_Venganza .
+
+:ScreeningEvent_CINEMA_CITY_HD_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T22:15:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Nuevos_Mutantes .
+
+:ScreeningEvent_CINEMA_CITY_HD_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:10:00"^^xsd:dateTime,
+        "1900-01-01T15:25:00"^^xsd:dateTime,
+        "1900-01-01T17:45:00"^^xsd:dateTime,
+        "1900-01-01T20:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
+
+:ScreeningEvent_CINEMA_OCHO_HD_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:45:00"^^xsd:dateTime,
+        "1900-01-01T16:45:00"^^xsd:dateTime,
+        "1900-01-01T19:45:00"^^xsd:dateTime,
+        "1900-01-01T22:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
+
+:ScreeningEvent_CINEMA_OCHO_HD_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:15:00"^^xsd:dateTime,
+        "1900-01-01T15:40:00"^^xsd:dateTime,
+        "1900-01-01T18:05:00"^^xsd:dateTime,
+        "1900-01-01T20:20:00"^^xsd:dateTime,
+        "1900-01-01T22:50:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Nuevos_Mutantes .
+
+:ScreeningEvent_CINEMA_OCHO_HD_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:20:00"^^xsd:dateTime,
+        "1900-01-01T17:50:00"^^xsd:dateTime,
+        "1900-01-01T20:15:00"^^xsd:dateTime,
+        "1900-01-01T22:30:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
+
+:ScreeningEvent_CINEMA_PARADISO_HD_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:30:00"^^xsd:dateTime,
+        "1900-01-01T18:00:00"^^xsd:dateTime,
+        "1900-01-01T20:30:00"^^xsd:dateTime,
+        "1900-01-01T23:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
+
+:ScreeningEvent_CINEMA_PARADISO_HD_Habitacion_212 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime,
+        "1900-01-01T18:00:00"^^xsd:dateTime,
+        "1900-01-01T20:00:00"^^xsd:dateTime,
+        "1900-01-01T22:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Habitacion_212 .
+
+:ScreeningEvent_CINEMA_PARADISO_HD_La_Fabrica_De_Sueños a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T19:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_La_Fabrica_De_Sueños .
+
+:ScreeningEvent_CINEMA_PARADISO_HD_La_Noche_Magica a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T20:45:00"^^xsd:dateTime,
+        "1900-01-01T23:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_La_Noche_Magica .
+
+:ScreeningEvent_CINEMA_PARADISO_HD_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:15:00"^^xsd:dateTime,
+        "1900-01-01T17:30:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T16:00:00"^^xsd:dateTime ;
+    sch:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Movie_Scooby!> .
+
+:ScreeningEvent_CINEMA_PARADISO_HD_Tenet a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T22:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Tenet .
+
+:ScreeningEvent_CINEMA_PARADISO_HD_Tom_Y_Jerry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:20:00"^^xsd:dateTime,
+        "1900-01-01T15:40:00"^^xsd:dateTime,
+        "1900-01-01T18:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Tom_Y_Jerry .
+
+:ScreeningEvent_CINEMA_ROCHA_HD_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T15:00:00"^^xsd:dateTime,
+        "1900-01-01T17:40:00"^^xsd:dateTime,
+        "1900-01-01T20:20:00"^^xsd:dateTime,
+        "1900-01-01T23:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
+
+:ScreeningEvent_CINEMA_ROCHA_HD_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T20:45:00"^^xsd:dateTime,
+        "1900-01-01T23:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Nuevos_Mutantes .
+
+:ScreeningEvent_CINEMA_ROCHA_HD_Mujer_Maravilla_1984 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T22:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Mujer_Maravilla_1984 .
+
+:ScreeningEvent_CINEMA_ROCHA_HD_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:45:00"^^xsd:dateTime,
+        "1900-01-01T16:45:00"^^xsd:dateTime,
+        "1900-01-01T19:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
+
+:ScreeningEvent_CINEMA_ROCHA_HD_Tom_Y_Jerry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime,
+        "1900-01-01T16:15:00"^^xsd:dateTime,
+        "1900-01-01T18:30:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Tom_Y_Jerry .
+
+:ScreeningEvent_CINEMA_SAN_MARTIN_HD_Caos:_El_Inicio a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:45:00"^^xsd:dateTime,
+        "1900-01-01T18:15:00"^^xsd:dateTime,
+        "1900-01-01T22:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Caos:_El_Inicio .
+
+:ScreeningEvent_CINEMA_SAN_MARTIN_HD_El_Secreto_Del_Bosque a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T20:45:00"^^xsd:dateTime,
+        "1900-01-01T23:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_El_Secreto_Del_Bosque .
+
+:ScreeningEvent_CINEMA_SAN_MARTIN_HD_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime,
+        "1900-01-01T17:00:00"^^xsd:dateTime,
+        "1900-01-01T19:50:00"^^xsd:dateTime,
+        "1900-01-01T22:40:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
+
+:ScreeningEvent_CINEMA_SAN_MARTIN_HD_Los_Intrusos a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T16:00:00"^^xsd:dateTime,
+        "1900-01-01T20:30:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Intrusos .
+
+:ScreeningEvent_CINEMA_SAN_MARTIN_HD_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:30:00"^^xsd:dateTime,
+        "1900-01-01T18:00:00"^^xsd:dateTime,
+        "1900-01-01T20:30:00"^^xsd:dateTime,
+        "1900-01-01T23:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Nuevos_Mutantes .
+
+:ScreeningEvent_CINEMA_SAN_MARTIN_HD_Tom_Y_Jerry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime,
+        "1900-01-01T18:25:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Tom_Y_Jerry .
+
+:ScreeningEvent_CINEMA_SAN_MARTIN_HD_Trolls_2:_World_Tour a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T16:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Trolls_2:_World_Tour .
+
+:Person_Maisie_Williams a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Maisie Williams"^^xsd:string .
+
+:Movie_Tom_Y_Jerry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta todo público"^^xsd:string ;
+    :description """Película del clásico dibujo animado de Tom y Jerry que mezcla live-action con animación. \r
+Jerry se muda al hotel más lujoso de Nueva York justo antes del "casamiento del siglo"; la coordinadora de la ceremonia, desesperada, no tiene más opción que contratar a Tom para eliminar a Jerry. Esto desata una batalla entre gato y ratón que amenaza con destruir la carrera de la coordinadora, la ceremonia e incluso quizás el hotel mismo.\r
+Pero pronto surge un problema más grave: un empleado ambicioso y diabólico que conspira contra los tres."""^^xsd:string ;
+    :duration 101 ;
+    :genre "Animación"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Tom Y Jerry"^^xsd:string ;
+    sch:actor :Person_animación ;
+    sch:director :Person_Tim_Story ;
+    sch:locationCreated :Country_EEUU .
+
+:Person_animación a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "animación"^^xsd:string .
+
+:Movie_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description """Encerrados contra su voluntad en una institución secreta, 5 jóvenes mutantes descubren sus poderosas habilidades. Están bajo el estudio y análisis de la Doctora Cecilia Reyes quién tiene como objetivo curarlos.\r
+Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, poderes y peligros que los rodean para intentar escapar a su pasado y salvarse a si mismos."""^^xsd:string ;
+    :duration 98 ;
+    :genre "Comedia"^^xsd:string,
+        "Terror"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Los Nuevos Mutantes"^^xsd:string ;
+    sch:actor :Person_Antonio_Banderas,
+        :Person_Anya_Taylor-Joy,
+        :Person_Blu_Hunt,
+        :Person_Charlie_Heaton,
+        :Person_Happy_Anderson,
+        :Person_Henry_Zaga,
+        :Person_Maisie_Williams,
+        :Person_Rosario_Dawson ;
+    sch:director :Person_Josh_Boone ;
+    sch:locationCreated :Country_EEUU .
+
+:Movie_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta todo público C/L"^^xsd:string ;
+    :description "Ambientada en el sudeste asiático, la cinta sigue la historia de Raya, una niña de un gran espíritu aventurero que vive en un reino llamado Kumandra. Este lejano y recóndito territorio está habitado por una civilización milenaria. Cinco son los clanes que forman esta tierra conocida como la del dragón y Raya, con el objetivo de devolver el equilibrio a su tierra, será la encargada de encontrar al último de los dragones en la mayor aventura de su vida."^^xsd:string ;
+    :duration 114 ;
+    :genre "Animación"^^xsd:string ;
+    :inLanguage "Castellano"^^xsd:string ;
+    :name "Raya Y El Ultimo Dragon"^^xsd:string ;
+    sch:actor :Person_Awkwafina,
+        :Person_Daniel_Dae_Kim,
+        :Person_Kelly_Marie_Tran ;
+    sch:director :Person_Carlos_Lopez_Estrada,
+        :Person_Don_Hall,
+        :Person_Paul_Briggs ;
+    sch:locationCreated :Country_EEUU .
+
+:Movie_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por todo tipo de aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra."^^xsd:string ;
+    :duration 117 ;
+    :genre "Ciencia Ficción"^^xsd:string ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Godzilla Vs. Kong"^^xsd:string ;
+    sch:actor :Person_Alexander_Skarsgård,
+        :Person_Demian_Bichir,
+        :Person_Eiza_González,
+        :Person_Kyle_Chandler,
+        :Person_Millie_Bobby_Brown,
+        :Person_Rebecca_Hall,
+        :Person_Shun_Oguri ;
+    sch:director :Person_Adam_Wingard ;
+    sch:locationCreated :Country_EEUU .
+
+:Country_EEUU a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "EEUU"^^xsd:string .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:MovieTheater_Cinépolis_Neuquén a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:MovieTheater ;
+    :name "Cinépolis Neuquén"^^xsd:string ;
+    sch:event :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_CRUELLA,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_MORTAL_KOMBAT,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_PÁNICO_EN_LAS_ALTURAS,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_RUEGA_POR_NOSOTROS,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_TOM_Y_JERRY,
+        :ScreeningEvent_Cinépolis_Neuquén_MS_2D_CRUELLA,
+        :ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
+        :ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO .
+
+:Country_Australia a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "Australia"^^xsd:string .
+
+:Country_Rusia a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "Rusia"^^xsd:string .
+
+:Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "ATPR"^^xsd:string ;
+    :description "En la Tierra Media, el Señor Oscuro Saurón creó los Grandes Anillos de Poder, forjados por los herreros Elfos. Tres para los reyes Elfos, siete para los Señores Enanos, y nueve para los Hombres Mortales. Secretamente, Saurón también forjó un anillo maestro, el Anillo Único, que contiene en sí el poder para esclavizar a toda la Tierra Media. Con la ayuda de un grupo de amigos y de valientes aliados, Frodo emprende un peligroso viaje con la misión de destruir el Anillo Único. Pero el Señor Oscuro Sauron, quien creara el Anillo, envía a sus servidores para perseguir al grupo. Si Sauron lograra recuperar el Anillo, sería el final de la Tierra Media."^^xsd:string ;
+    :duration 180 ;
+    :genre "Acción"^^xsd:string,
+        "Aventura"^^xsd:string,
+        "Fantasía"^^xsd:string ;
+    :name "EL SEÑOR DE LOS ANILLOS: LA COMUNIDAD DEL ANILLO"^^xsd:string,
+        "The Lord of the Rings"^^xsd:string ;
+    sch:actor :Person_Billy_Boyd,
+        :Person_Cate_Blanchett,
+        :Person_Dominic_Monaghan,
+        :Person_Elijah_Wood,
+        :Person_Ian_McKellen,
+        :Person_John_Rhys-Davies,
+        :Person_Liv_Tyler,
+        :Person_Orlando_Bloom,
+        :Person_Sean_Astin,
+        :Person_Viggo_Mortensen ;
+    sch:director :Person_Peter_Jackson ;
+    sch:locationCreated :Country_Estados_Unidos,
+        :Country_Nueva_Zelanda ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
+
+:Movie_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "N/A"^^xsd:string ;
+    :description "Un boxeador fracasado descubre un secreto familiar que lo lleva a un torneo místico llamado Mortal Kombat donde se encuentra con un grupo de guerreros que luchan hasta la muerte para salvar los reinos del malvado hechicero Shang Tsung."^^xsd:string ;
+    :duration 110 ;
+    :genre "Acción"^^xsd:string,
+        "Aventura"^^xsd:string,
+        "Fantasía"^^xsd:string ;
+    :name "MORTAL KOMBAT"^^xsd:string,
+        "Mortal Kombat"^^xsd:string ;
+    sch:actor :Person_Hiroyuki_Sanada,
+        :Person_Jessica_McNamee,
+        :Person_Joe_Taslim,
+        :Person_Josh_Lawson,
+        :Person_Lewis_Tan,
+        :Person_Ludi_Lin,
+        :Person_Max_Huang,
+        :Person_Mehcad_Brooks,
+        :Person_Ng_Chin_Han,
+        :Person_Tadanobu_Asano ;
+    sch:director :Person_Simon_McQuoid ;
+    sch:locationCreated :Country_Australia,
+        :Country_Estados_Unidos ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
+
+:Movie_PÁNICO_EN_LAS_ALTURAS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "N/A"^^xsd:string ;
+    :description "Cinco jóvenes, deciden celebrar la víspera de Año Nuevo en la cima de una montaña, pero en su intento quedan atrapados en un teleférico. Lo que comenzó como una fiesta de aventura, pronto se convertirá en su peor pesadilla. El frío, la altura y el miedo a una muerte lenta hacen que revelen su verdadera esencia."^^xsd:string ;
+    :duration 90 ;
+    :genre "Thriller"^^xsd:string ;
+    :name "Breakaway"^^xsd:string,
+        "PÁNICO EN LAS ALTURAS"^^xsd:string ;
+    sch:actor :Person_Aleksandr_Nikitchenko,
+        :Person_Anastasiya_Grachyova,
+        :Person_Andrey_Nazimov,
+        :Person_Angelina_Pikovskaya,
+        :Person_Denis_Kosyakov,
+        :Person_Ingrid_Olerinskaya,
+        :Person_Irina_Antonenko,
+        :Person_Kseniya_Shumeyko,
+        :Person_Victoriya_Pyatakina,
+        :Person_Vladimir_Gusev ;
+    sch:director :Person_Tigran_Sahakyan ;
+    sch:locationCreated :Country_Rusia ;
+    sch:publisher :Organization_Digicine .
+
+:Movie_RUEGA_POR_NOSOTROS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "N/A"^^xsd:string ;
+    :description "Muy pronto llega Ruega por Nosotros, que sigue a Alice, una joven con problemas de audición que, tras una supuesta visita de la Virgen María, es inexplicablemente capaz de oír, hablar y curar a los enfermos. A medida que se corre la voz y la gente de cerca y de lejos acude a presenciar sus milagros, un periodista caído en desgracia (Jeffrey Dean Morgan) con la esperanza de revivir su carrera visita el pequeño pueblo de Nueva Inglaterra para investigar. Cuando empiezan a suceder sucesos aterradores por todas partes, empieza a cuestionarse si estos fenómenos son obra de la Virgen María o de algo más siniestro. Ruega por Nosotros está producida por Sam Raimi, Rob Tapert y Evan Spiliotopoulos, escrita para la pantalla y dirigida por Evan Spiliotopoulos, y está basada en el best-seller de James Herbert Shrine."^^xsd:string ;
+    :duration 99 ;
+    :genre "Terror"^^xsd:string ;
+    :name "RUEGA POR NOSOTROS"^^xsd:string,
+        "The Unholy"^^xsd:string ;
+    sch:actor :Person_Bates_Wilder,
+        :Person_Cary_Elwes,
+        :Person_Celeste_Oliva,
+        :Person_Christine_Adams,
+        :Person_Diogo_Morgado,
+        :Person_Jeffrey_Dean_Morgan,
+        :Person_Katie_Aselton,
+        :Person_Kiara_Pichardo,
+        :Person_Marina_Mazepa,
+        :Person_William_Sadler ;
+    sch:director :Person_Evan_Spiliotopoulos ;
+    sch:locationCreated :Country_Estados_Unidos ;
+    sch:publisher :Organization_UIP .
+
+:Movie_TOM_Y_JERRY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "ATP"^^xsd:string ;
+    :description "Tom el gato y Jerry el ratón son expulsados de su casa y se trasladan a un elegante hotel de Nueva York, donde una empleada descuidada llamada Kayla perderá su trabajo si no puede desalojar a Jerry antes de una boda de clase alta en el hotel. ¿Su solución? Contratar a Tom para deshacerse del molesto ratón."^^xsd:string ;
+    :duration 101 ;
+    :genre "Acción"^^xsd:string,
+        "Animación"^^xsd:string,
+        "Aventura"^^xsd:string,
+        "Comedia"^^xsd:string,
+        "Familia"^^xsd:string ;
+    :name "TOM Y JERRY"^^xsd:string,
+        "Tom and Jerry"^^xsd:string ;
+    sch:actor :Person_Bobby_Cannavale,
+        :Person_Chloë_Grace_Moretz,
+        :Person_Frank_Welker,
+        :Person_June_Foray,
+        :Person_Lil_Rel_Howery,
+        :Person_Mel_Blanc,
+        :Person_Michael_Peña,
+        :Person_Nicky_Jam,
+        :Person_T-Pain,
+        :Person_William_Hanna ;
+    sch:director :Person_Tim_Story ;
+    sch:locationCreated :Country_Estados_Unidos ;
+    sch:publisher :Organization_Warner .
+
+:Organization_Digicine a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Digicine"^^xsd:string .
+
+:Organization_UIP a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "UIP"^^xsd:string .
+
+:Organization_Walt_Disney_Pictures a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Walt Disney Pictures"^^xsd:string .
+
+:Organization_Warner a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Warner"^^xsd:string .
+
+:Person_Aleksandr_Nikitchenko a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Aleksandr Nikitchenko"^^xsd:string .
+
+:Person_Anastasiya_Grachyova a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Anastasiya Grachyova"^^xsd:string .
+
+:Person_Andrey_Nazimov a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Andrey Nazimov"^^xsd:string .
+
+:Person_Angelina_Pikovskaya a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Angelina Pikovskaya"^^xsd:string .
+
+:Person_Bates_Wilder a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Bates Wilder"^^xsd:string .
+
+:Person_Bernard_Hill a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Bernard Hill"^^xsd:string .
+
+:Person_Bobby_Cannavale a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Bobby Cannavale"^^xsd:string .
+
+:Person_Cary_Elwes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Cary Elwes"^^xsd:string .
+
+:Person_Celeste_Oliva a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Celeste Oliva"^^xsd:string .
+
+:Person_Chloë_Grace_Moretz a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Chloë Grace Moretz"^^xsd:string .
+
+:Person_Christine_Adams a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Christine Adams"^^xsd:string .
+
+:Person_Christopher_Lee a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Christopher Lee"^^xsd:string .
+
+:Person_Craig_Gillespie a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Craig Gillespie"^^xsd:string .
+
+:Person_Denis_Kosyakov a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Denis Kosyakov"^^xsd:string .
+
+:Person_Diogo_Morgado a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Diogo Morgado"^^xsd:string .
+
+:Person_Dominic_Monaghan a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Dominic Monaghan"^^xsd:string .
+
+:Person_Emily_Beecham a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Emily Beecham"^^xsd:string .
+
+:Person_Emma_Stone a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Emma Stone"^^xsd:string .
+
+:Person_Emma_Thompson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Emma Thompson"^^xsd:string .
+
+:Person_Evan_Spiliotopoulos a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Evan Spiliotopoulos"^^xsd:string .
+
+:Person_Frank_Welker a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Frank Welker"^^xsd:string .
+
+:Person_Hiroyuki_Sanada a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Hiroyuki Sanada"^^xsd:string .
+
+:Person_Ingrid_Olerinskaya a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ingrid Olerinskaya"^^xsd:string .
+
+:Person_Irina_Antonenko a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Irina Antonenko"^^xsd:string .
+
+:Person_Jamie_Demetriou a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jamie Demetriou"^^xsd:string .
+
+:Person_Jeffrey_Dean_Morgan a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jeffrey Dean Morgan"^^xsd:string .
+
+:Person_Jessica_McNamee a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Jessica McNamee"^^xsd:string .
+
+:Person_Joe_Taslim a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Joe Taslim"^^xsd:string .
+
+:Person_Joel_Fry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Joel Fry"^^xsd:string .
+
+:Person_Josh_Lawson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Josh Lawson"^^xsd:string .
+
+:Person_June_Foray a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "June Foray"^^xsd:string .
+
+:Person_Katie_Aselton a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Katie Aselton"^^xsd:string .
+
+:Person_Kiara_Pichardo a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kiara Pichardo"^^xsd:string .
+
+:Person_Kirby_Howell-Baptiste a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kirby Howell-Baptiste"^^xsd:string .
+
+:Person_Kseniya_Shumeyko a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Kseniya Shumeyko"^^xsd:string .
+
+:Person_Lewis_Tan a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Lewis Tan"^^xsd:string .
+
+:Person_Lil_Rel_Howery a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Lil Rel Howery"^^xsd:string .
+
+:Person_Ludi_Lin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ludi Lin"^^xsd:string .
+
+:Person_Marina_Mazepa a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Marina Mazepa"^^xsd:string .
+
+:Person_Mark_Strong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Mark Strong"^^xsd:string .
+
+:Person_Max_Huang a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Max Huang"^^xsd:string .
+
+:Person_Mehcad_Brooks a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Mehcad Brooks"^^xsd:string .
+
+:Person_Mel_Blanc a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Mel Blanc"^^xsd:string .
+
+:Person_Michael_Peña a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Michael Peña"^^xsd:string .
+
+:Person_Ng_Chin_Han a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ng Chin Han"^^xsd:string .
+
+:Person_Nicky_Jam a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Nicky Jam"^^xsd:string .
+
+:Person_Orlando_Bloom a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Orlando Bloom"^^xsd:string .
+
+:Person_Paul_Walter_Hauser a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Paul Walter Hauser"^^xsd:string .
+
+:Person_Simon_McQuoid a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Simon McQuoid"^^xsd:string .
+
+:Person_T-Pain a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "T-Pain"^^xsd:string .
+
+:Person_Tadanobu_Asano a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Tadanobu Asano"^^xsd:string .
+
+:Person_Tigran_Sahakyan a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Tigran Sahakyan"^^xsd:string .
+
+:Person_Tim_Story a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Tim Story"^^xsd:string .
+
+:Person_Victoriya_Pyatakina a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Victoriya Pyatakina"^^xsd:string .
+
+:Person_Vladimir_Gusev a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Vladimir Gusev"^^xsd:string .
+
+:Person_William_Hanna a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "William Hanna"^^xsd:string .
+
+:Person_William_Sadler a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "William Sadler"^^xsd:string .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_CRUELLA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADO"^^xsd:string ;
+    :startTime "1900-01-01T18:00:00"^^xsd:dateTime ;
+    :videoFormat "CLASSIC 2D"^^xsd:string ;
+    sch:workPresented :Movie_CRUELLA .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADO"^^xsd:string ;
+    :startTime "1900-01-01T14:45:00"^^xsd:dateTime ;
+    :videoFormat "CLASSIC 2D"^^xsd:string ;
+    sch:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "ESPAÑOL"^^xsd:string ;
+    :startTime "1900-01-01T18:45:00"^^xsd:dateTime ;
+    :videoFormat "CLASSIC 2D"^^xsd:string ;
+    sch:workPresented :Movie_MORTAL_KOMBAT .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_PÁNICO_EN_LAS_ALTURAS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "ESPAÑOL"^^xsd:string ;
+    :startTime "1900-01-01T19:20:00"^^xsd:dateTime ;
+    :videoFormat "CLASSIC 2D"^^xsd:string ;
+    sch:workPresented :Movie_PÁNICO_EN_LAS_ALTURAS .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_RUEGA_POR_NOSOTROS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "ESPAÑOL"^^xsd:string ;
+    :startTime "1900-01-01T16:45:00"^^xsd:dateTime ;
+    :videoFormat "CLASSIC 2D"^^xsd:string ;
+    sch:workPresented :Movie_RUEGA_POR_NOSOTROS .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_TOM_Y_JERRY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "ESPAÑOL"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime ;
+    :videoFormat "CLASSIC 2D"^^xsd:string ;
+    sch:workPresented :Movie_TOM_Y_JERRY .
+
+:ScreeningEvent_Cinépolis_Neuquén_MS_2D_CRUELLA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "ESPAÑOL"^^xsd:string ;
+    :startTime "1900-01-01T15:15:00"^^xsd:dateTime,
+        "1900-01-01T18:30:00"^^xsd:dateTime ;
+    :videoFormat "MS 2D"^^xsd:string ;
+    sch:workPresented :Movie_CRUELLA .
+
+:ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADO"^^xsd:string ;
+    :startTime "1900-01-01T18:00:00"^^xsd:dateTime ;
+    :videoFormat "MS 2D"^^xsd:string ;
+    sch:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
+
+:ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADO"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime ;
+    :videoFormat "MS 2D"^^xsd:string ;
+    sch:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO .
+
+:Country_Nueva_Zelanda a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "Nueva Zelanda"^^xsd:string .
+
+:Movie_CRUELLA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "P-13"^^xsd:string ;
+    :description "La ganadora del Oscar® Emma Stone (La La Land) protagoniza CRUELLA de Disney, un nuevo largometraje de acción real que retrata los primeros días rebeldes de una de las villanas más notorias del cine y de la moda, la legendaria Cruella de Vil. Ambientada en los años 70 en Londres y en medio de la revolución del punk rock, CRUELLA sigue a una joven estafadora llamada Estella, una chica inteligente y creativa decidida a hacerse un lugar en la moda con sus diseños de ropa. Cuando se hace amiga de un par de jóvenes ladrones que aprecian su apetito por las travesuras, juntos logran construir una vida en las calles de Londres. Un día, el talento de Estella llama la atención de la Baronesa von Hellman, la aterradoramente elegante y sofisticada leyenda de la moda interpretada por la dos veces ganadora del Oscar® Emma Thompson (La mansión Howard, Sensatez y Sentimiento). Pero su relación pone en marcha un curso de eventos y revelaciones que harán que Estella abrace su lado perverso y se convierta en la disonante, vanguardista y ávida de venganza Cruella."^^xsd:string ;
+    :duration 134 ;
+    :genre "Acción"^^xsd:string,
+        "Comedia"^^xsd:string,
+        "Drama"^^xsd:string ;
+    :name "CRUELLA"^^xsd:string,
+        "Cruella"^^xsd:string ;
+    sch:actor :Person_Emily_Beecham,
+        :Person_Emma_Stone,
+        :Person_Emma_Thompson,
+        :Person_Jamie_Demetriou,
+        :Person_Joel_Fry,
+        :Person_Kirby_Howell-Baptiste,
+        :Person_Mark_Strong,
+        :Person_Paul_Walter_Hauser ;
+    sch:director :Person_Craig_Gillespie ;
+    sch:locationCreated :Country_Estados_Unidos ;
+    sch:publisher :Organization_Walt_Disney_Pictures .
+
+:Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "P-13"^^xsd:string ;
+    :description "La Compañía del Anillo se ha disuelto. El portador del anillo Frodo y su fiel amigo Sam se dirigen hacia Mordor para destruir el Anillo Único y acabar con el poder de Sauron. Mientras, y tras la dura batalla contra los orcos donde cayó Boromir, el hombre Aragorn, el elfo Legolas y el enano Gimli intentan rescatar a los medianos Merry y Pipin, secuestrados por los ogros de Mordor. Por su parte, Saurón y el traidor Sarumán continúan con sus planes en Mordor, en espera de la guerra contra las razas libres de la Tierra Media."^^xsd:string ;
+    :duration 176 ;
+    :genre "Acción"^^xsd:string,
+        "Aventura"^^xsd:string,
+        "Fantasía"^^xsd:string ;
+    :name "EL SEÑOR DE LOS ANILLOS: LAS DOS TORRES"^^xsd:string,
+        "The Lord of the Rings"^^xsd:string ;
+    sch:actor :Person_Bernard_Hill,
+        :Person_Billy_Boyd,
+        :Person_Cate_Blanchett,
+        :Person_Christopher_Lee,
+        :Person_Elijah_Wood,
+        :Person_Ian_McKellen,
+        :Person_John_Rhys-Davies,
+        :Person_Liv_Tyler,
+        :Person_Sean_Astin,
+        :Person_Viggo_Mortensen ;
+    sch:director :Person_Peter_Jackson ;
+    sch:locationCreated :Country_Estados_Unidos,
+        :Country_Nueva_Zelanda ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
+
+:Person_Billy_Boyd a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Billy Boyd"^^xsd:string .
+
+:Person_Cate_Blanchett a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Cate Blanchett"^^xsd:string .
+
+:Person_Elijah_Wood a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Elijah Wood"^^xsd:string .
+
+:Person_Ian_McKellen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Ian McKellen"^^xsd:string .
+
+:Person_John_Rhys-Davies a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "John Rhys-Davies"^^xsd:string .
+
+:Person_Liv_Tyler a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Liv Tyler"^^xsd:string .
+
+:Person_Peter_Jackson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Peter Jackson"^^xsd:string .
+
+:Person_Sean_Astin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Sean Astin"^^xsd:string .
+
+:Person_Viggo_Mortensen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Person ;
+    :name "Viggo Mortensen"^^xsd:string .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Organization ;
+    :name "Warner Bros."^^xsd:string .
+
+:Country_Estados_Unidos a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Country ;
+    :name "Estados Unidos"^^xsd:string .
+
